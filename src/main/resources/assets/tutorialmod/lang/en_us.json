@@ -1,0 +1,16 @@
+{
+  "item.tutorialmod.raw_ken": "Raw Ken",
+  "item.tutorialmod.uni": "Uni",
+  "item.tutorialmod.nyx": "Nyx",
+  "item.tutorialmod.ken_ingot": "Ken Ingot",
+
+
+  "block.tutorialmod.ken_block": "Block of Ken",
+  "block.tutorialmod.nyx_block": "Block of Nyx",
+  "block.tutorialmod.kui_block": "Block of Kui",
+  "block.tutorialmod.killz_block": "Block of Killz",
+  "block.tutorialmod.uni_block": "Block of Uni",
+
+  "itemgroup.mymod": "Oreo's Mod items"
+
+}
