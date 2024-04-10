@@ -17,7 +17,7 @@ public class ModItemGroups {
     public static final ItemGroup MY_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "oreosmod"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mymod"))
-                    .icon(() -> new ItemStack(ModItems.RAW_KEN)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.RAW_KEN)).entries((displayContext, entries) -> { //when minecraft starts
 
                         entries.add(ModItems.UNI);
                         entries.add(ModItems.NYX);
