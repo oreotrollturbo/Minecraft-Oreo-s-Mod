@@ -21,8 +21,17 @@ public class ModItems {
     public  static  final Item NYX = registerItem("nyx", new Item(new FabricItemSettings()));
     public  static  final Item KEN_INGOT = registerItem("ken_ingot", new Item(new FabricItemSettings()));
 
+
+
+
     public  static  final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+    public  static  final Item PIEROGI = registerItem
+            ("pierogi", new Item(new FabricItemSettings().food(ModFoodComponents.PIEROGI)));
+
+    public  static  final Item VODKA = registerItem
+            ("vodka", new Item(new FabricItemSettings().food(ModFoodComponents.VODKA)));
 
     private static void addItemsToIngerdientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_KEN);

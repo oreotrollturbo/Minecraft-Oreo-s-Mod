@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "tutorialmod:ken_block"
+      "item": "tutorialmod:uni_block"
     }
   ],
   "result": {
-    "item": "tutorialmod:ken_ingot",
+    "item": "tutorialmod:uni",
     "count": 9
   }
 }

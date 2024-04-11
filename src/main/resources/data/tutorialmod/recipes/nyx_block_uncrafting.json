@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "tutorialmod:ken_block"
+      "item": "tutorialmod:nyx_block"
     }
   ],
   "result": {
-    "item": "tutorialmod:ken_ingot",
+    "item": "tutorialmod:nyx",
     "count": 9
   }
 }

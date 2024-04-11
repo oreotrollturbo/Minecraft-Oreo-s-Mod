@@ -2,6 +2,7 @@ package net.oreotroll.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
@@ -18,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
 	}
 }

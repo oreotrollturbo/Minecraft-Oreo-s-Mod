@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "tutorialmod:ken_block"
+      "item": "minecraft:potato"
     }
   ],
   "result": {
-    "item": "tutorialmod:ken_ingot",
-    "count": 9
+    "item": "tutorialmod:vodka",
+    "count": 2
   }
 }

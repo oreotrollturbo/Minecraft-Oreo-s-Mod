@@ -23,8 +23,10 @@ public class ModItemGroups {
                         entries.add(ModItems.NYX);
                         entries.add(ModItems.RAW_KEN);
                         entries.add(ModItems.KEN_INGOT);
+                        entries.add(ModItems.VODKA);
 
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.PIEROGI);
 
 
                         entries.add(ModBlocks.KEN_BLOCK);

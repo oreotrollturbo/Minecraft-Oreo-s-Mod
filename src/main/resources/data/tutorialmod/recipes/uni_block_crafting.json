@@ -8,10 +8,10 @@
   ],
 "key": {
   "#": {
-    "item": "tutorialmod:ken_ingot"
+    "item": "tutorialmod:uni"
   }
 },
   "result": {
-    "item": "tutorialmod:ken_block"
+    "item": "tutorialmod:uni_block"
   }
 }
