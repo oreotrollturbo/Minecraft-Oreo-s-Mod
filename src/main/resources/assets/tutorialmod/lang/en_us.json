@@ -20,6 +20,8 @@
 
   "block.tutorialmod.sound_block": "Sound Block",
 
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds ores where you click :)",
+
   "itemgroup.mymod": "Oreo's Mod items"
 
 }
