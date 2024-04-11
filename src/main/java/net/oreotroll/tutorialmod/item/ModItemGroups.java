@@ -24,12 +24,17 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_KEN);
                         entries.add(ModItems.KEN_INGOT);
 
+                        entries.add(ModItems.METAL_DETECTOR);
+
 
                         entries.add(ModBlocks.KEN_BLOCK);
+                        entries.add(ModBlocks.KEN_ORE);
                         entries.add(ModBlocks.NYX_BLOCK);
                         entries.add(ModBlocks.KUI_BLOCK);
                         entries.add(ModBlocks.KILLZ_BLOCK);
                         entries.add(ModBlocks.UNI_BLOCK);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(Items.STICK);
 
