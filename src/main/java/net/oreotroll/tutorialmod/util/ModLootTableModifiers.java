@@ -71,7 +71,7 @@ public class ModLootTableModifiers {
                 return LootTable.builder().pool(pool).build();
             }
 
-            return null;
+            return null; //yes
         });
 
     }
