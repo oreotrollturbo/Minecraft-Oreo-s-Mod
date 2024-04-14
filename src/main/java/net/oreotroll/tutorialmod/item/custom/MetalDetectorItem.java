@@ -12,6 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.oreotroll.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -63,7 +64,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuabaleBlock(BlockState state) {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE) || state.isOf(Blocks.SPAWNER) ; //defines what blocks are valuable
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS) || state.isOf(Blocks.SPAWNER); //defines what blocks are valuable
     }
 
     @Override
@@ -72,3 +73,5 @@ public class MetalDetectorItem extends Item {
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
+
+

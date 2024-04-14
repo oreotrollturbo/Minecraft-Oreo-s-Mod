@@ -4,13 +4,13 @@ import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
 import net.oreotroll.tutorialmod.item.custom.MetalDetectorItem;
+import net.oreotroll.tutorialmod.item.custom.ModArmorItem;
 
 import java.security.PublicKey;
 
@@ -26,6 +26,46 @@ public class ModItems {
 
     public  static  final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+    public  static  final Item KEN_STAFF = registerItem("ken_staff",
+            new Item(new FabricItemSettings().maxCount(1)));
+
+
+    public  static  final Item KEN_PICKAXE = registerItem("ken_pickaxe",
+            new PickaxeItem(ModToolMaterial.KEN_INGOT, 2,2f,
+                    new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item KEN_AXE = registerItem("ken_axe",
+            new AxeItem(ModToolMaterial.KEN_INGOT, 15,1.2f,
+                    new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item KEN_SHOVEL = registerItem("ken_shovel",
+            new ShovelItem(ModToolMaterial.KEN_INGOT, 2,2f,
+                    new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item KEN_HOE = registerItem("ken_hoe",
+            new HoeItem(ModToolMaterial.KEN_INGOT, 2,2f,
+                    new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item KEN_SWORD = registerItem("ken_sword",
+            new SwordItem(ModToolMaterial.KEN_INGOT, 11,2f,
+                    new FabricItemSettings().maxCount(1)));
+
+
+
+
+    public  static  final Item KEN_HELMET = registerItem("ken_helmet",
+            new ModArmorItem(ModArmourMaterials.KEN_INGOT, ArmorItem.Type.HELMET, new  FabricItemSettings()));
+    public  static  final Item KEN_CHESTPLATE = registerItem("ken_chestplate",
+            new ArmorItem(ModArmourMaterials.KEN_INGOT, ArmorItem.Type.CHESTPLATE, new  FabricItemSettings()));
+    public  static  final Item KEN_LEGGINGS = registerItem("ken_leggings",
+            new ArmorItem(ModArmourMaterials.KEN_INGOT, ArmorItem.Type.LEGGINGS, new  FabricItemSettings()));
+    public  static  final Item KEN_BOOTS = registerItem("ken_boots",
+            new ArmorItem(ModArmourMaterials.KEN_INGOT, ArmorItem.Type.BOOTS, new  FabricItemSettings()));
+
+
+
+
 
     public  static  final Item PIEROGI = registerItem
             ("pierogi", new Item(new FabricItemSettings().food(ModFoodComponents.PIEROGI)));

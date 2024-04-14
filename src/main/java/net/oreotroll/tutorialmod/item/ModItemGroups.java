@@ -28,17 +28,44 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.PIEROGI);
 
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
-                        entries.add(ModBlocks.KEN_BLOCK);
-                        entries.add(ModBlocks.KEN_ORE);
+
                         entries.add(ModBlocks.NYX_BLOCK);
+                        entries.add(ModBlocks.NYX_STAIRS);
                         entries.add(ModBlocks.KUI_BLOCK);
                         entries.add(ModBlocks.KILLZ_BLOCK);
                         entries.add(ModBlocks.UNI_BLOCK);
+                        entries.add(ModBlocks.KEN_BLOCK);
+                        entries.add(ModBlocks.KEN_ORE);
 
-                        entries.add(ModBlocks.SOUND_BLOCK);
 
-                        entries.add(Items.STICK);
+
+                        entries.add(ModBlocks.KEN_STAIRS);
+                        entries.add(ModBlocks.KEN_SLAB);
+                        entries.add(ModBlocks.KEN_BUTTON);
+                        entries.add(ModBlocks.KEN_PRESSURE_PLATE);
+                        entries.add(ModBlocks.KEN_FENCE);
+                        entries.add(ModBlocks.KEN_FENCE_GATE);
+                        entries.add(ModBlocks.KEN_DOOR);
+                        entries.add(ModBlocks.KEN_TRAPDOOR);
+                        entries.add(ModBlocks.KEN_WALL);
+
+
+                        entries.add(ModItems.KEN_STAFF);
+                        entries.add(ModItems.KEN_SHOVEL);
+                        entries.add(ModItems.KEN_HOE);
+                        entries.add(ModItems.KEN_PICKAXE);
+                        entries.add(ModItems.KEN_AXE);
+                        entries.add(ModItems.KEN_SWORD);
+
+                        entries.add(ModItems.KEN_HELMET);
+                        entries.add(ModItems.KEN_CHESTPLATE);
+                        entries.add(ModItems.KEN_LEGGINGS);
+                        entries.add(ModItems.KEN_BOOTS);
+
+
+                        entries.add(Items.EGG);
 
                     }).build());
 

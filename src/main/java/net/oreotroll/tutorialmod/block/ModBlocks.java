@@ -2,13 +2,12 @@ package net.oreotroll.tutorialmod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.oreotroll.tutorialmod.TutorialMod;
@@ -39,6 +38,30 @@ public class ModBlocks {
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.BLUE_ICE)));
 
+    public static final Block KEN_STAIRS = registerBlock("ken_stairs",
+            new StairsBlock(ModBlocks.KEN_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block KEN_SLAB = registerBlock("ken_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block KEN_BUTTON = registerBlock("ken_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),BlockSetType.IRON,5,true));
+    public static final Block KEN_PRESSURE_PLATE = registerBlock("ken_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
+
+    public static final Block KEN_FENCE = registerBlock("ken_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block KEN_FENCE_GATE = registerBlock("ken_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.BAMBOO));
+    public static final Block KEN_WALL = registerBlock("ken_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block KEN_DOOR = registerBlock("ken_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(),BlockSetType.IRON));
+    public static final Block KEN_TRAPDOOR = registerBlock("ken_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(),BlockSetType.IRON));
+
+    public static final Block NYX_STAIRS = registerBlock("nyx_stairs",
+            new StairsBlock(ModBlocks.NYX_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

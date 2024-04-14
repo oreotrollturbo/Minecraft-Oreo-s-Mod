@@ -8,6 +8,19 @@
 
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.pierogi": "Pierogi",
+  "item.tutorialmod.ken_staff": "Ken's Staff",
+
+  "item.tutorialmod.ken_sword": "Ken Sword",
+  "item.tutorialmod.ken_pickaxe": "Ken Pickaxe",
+  "item.tutorialmod.ken_axe": "Ken Axe",
+  "item.tutorialmod.ken_shovel": "Ken Shovel",
+  "item.tutorialmod.ken_hoe": "Ken Hoe",
+
+
+  "item.tutorialmod.ken_helmet": "Ken Helmet",
+  "item.tutorialmod.ken_chestplate": "Ken Chestplate",
+  "item.tutorialmod.ken_leggings": "Ken Leggings",
+  "item.tutorialmod.ken_boots": "Ken Boots",
 
 
   "block.tutorialmod.ken_block": "Block of Ken",
@@ -21,6 +34,25 @@
   "block.tutorialmod.sound_block": "Sound Block",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds ores where you click :)",
+  "tooltip.tutorialmod.ken_staff.tooltip": "Mighty Ken's Staff",
+
+
+
+  "block.tutorialmod.ken_stairs": "Ken Stairs",
+  "block.tutorialmod.ken_slab": "Ken Slab",
+  "block.tutorialmod.ken_button": "Ken Button",
+  "block.tutorialmod.ken_pressure_plate": "Ken Pressure Plate",
+  "block.tutorialmod.ken_fence": "Ken Fence",
+  "block.tutorialmod.ken_fence_gate": "Ken Fence Gate",
+  "block.tutorialmod.ken_wall": "Ken Wall",
+  "block.tutorialmod.ken_door": "Ken Door",
+  "block.tutorialmod.ken_trapdoor": "Ken Trapdoor",
+  "block.tutorialmod.nyx_stairs": "Nyx Stairs",
+
+
+
+
+
 
   "itemgroup.mymod": "Oreo's Mod items"
 
