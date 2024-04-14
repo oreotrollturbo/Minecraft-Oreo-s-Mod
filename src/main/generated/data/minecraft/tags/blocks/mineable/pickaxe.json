@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:ken_ore",
+    "tutorialmod:ken_block",
+    "tutorialmod:uni_block",
+    "tutorialmod:nyx_block",
+    "tutorialmod:sound_block",
+    "tutorialmod:nyx_stairs",
+    "tutorialmod:kui_block"
+  ]
+}

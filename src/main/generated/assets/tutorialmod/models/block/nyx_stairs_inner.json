@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/nyx_block",
+    "side": "tutorialmod:block/nyx_block",
+    "top": "tutorialmod:block/nyx_block"
+  }
+}

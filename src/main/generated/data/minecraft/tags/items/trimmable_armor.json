@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:ken_helmet",
+    "tutorialmod:ken_chestplate",
+    "tutorialmod:ken_leggings",
+    "tutorialmod:ken_boots"
+  ]
+}

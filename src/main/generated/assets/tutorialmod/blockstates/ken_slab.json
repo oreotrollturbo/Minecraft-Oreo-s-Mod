@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/ken_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/ken_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/ken_slab_top"
+    }
+  }
+}

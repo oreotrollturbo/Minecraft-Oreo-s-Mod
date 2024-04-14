@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:potato"
+    }
+  },
+  "pattern": [
+    "   ",
+    " I ",
+    "   "
+  ],
+  "result": {
+    "count": 2,
+    "item": "tutorialmod:vodka"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "V": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "VVV",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "tutorialmod:ken_pickaxe"
+  },
+  "show_notification": true
+}

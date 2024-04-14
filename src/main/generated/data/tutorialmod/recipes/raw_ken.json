@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "V": {
+      "item": "tutorialmod:vodka"
+    }
+  },
+  "pattern": [
+    "III",
+    "IVI",
+    "III"
+  ],
+  "result": {
+    "item": "tutorialmod:raw_ken"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "V": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "V  ",
+    "I  ",
+    "I  "
+  ],
+  "result": {
+    "item": "tutorialmod:ken_staff"
+  },
+  "show_notification": true
+}

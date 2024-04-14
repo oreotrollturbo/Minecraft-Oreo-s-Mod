@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 10.0,
+  "group": "ken",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": "tutorialmod:pierogi"
+}

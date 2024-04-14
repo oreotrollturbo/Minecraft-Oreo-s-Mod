@@ -4,8 +4,10 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.oreotroll.tutorialmod.block.ModBlocks;
+import net.oreotroll.tutorialmod.datagen.ModLootTableProvider;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
+import net.oreotroll.tutorialmod.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +22,10 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		ModLootTableModifiers.ModifyLootTables();  //perhaps an issue
+
 		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
+
+
 	}
 }

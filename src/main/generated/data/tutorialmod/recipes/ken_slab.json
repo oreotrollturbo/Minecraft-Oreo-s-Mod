@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "III"
+  ],
+  "result": {
+    "count": 6,
+    "item": "tutorialmod:ken_slab"
+  },
+  "show_notification": true
+}

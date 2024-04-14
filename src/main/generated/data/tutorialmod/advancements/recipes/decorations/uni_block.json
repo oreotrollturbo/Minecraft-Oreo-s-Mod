@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:uni_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uni": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:uni"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uni",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:uni_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

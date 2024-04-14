@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:ken_ore",
+    "tutorialmod:ken_block",
+    "#minecraft:diamond_ores",
+    "#minecraft:emerald_ores"
+  ]
+}

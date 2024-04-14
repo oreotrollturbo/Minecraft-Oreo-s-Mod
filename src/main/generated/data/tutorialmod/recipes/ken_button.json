@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    " I ",
+    "   "
+  ],
+  "result": {
+    "item": "tutorialmod:ken_button"
+  },
+  "show_notification": true
+}

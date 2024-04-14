@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:ken_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tutorialmod:ken_ingot"
+  }
+}
