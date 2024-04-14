@@ -2,13 +2,19 @@ package net.oreotroll.tutorialmod.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.item.ModItems;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ModLootTableModifiers {
 
@@ -16,6 +22,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","chests/ancient_city");
     private static final Identifier WARDEN_ID =
             new Identifier("minecraft","entities/warden");
+    private static final Identifier SUSPICIOUS_SAND_ID =
+            new Identifier("minecraft","archeology/desert_pyramid");
 
 
     public static void ModifyLootTables(){
@@ -51,5 +59,20 @@ public class ModLootTableModifiers {
 
 
         });
+
+        LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) ->{ //Sus sand needs to be modified a diff way
+
+            if (SUSPICIOUS_SAND_ID.equals(id)){
+                List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries)); //Keeps the entries that exist
+                entries.add(ItemEntry.builder(ModItems.RAW_KEN).build());
+                entries.add(ItemEntry.builder(ModItems.KEN_STAFF).build());
+
+                LootPool.Builder pool = LootPool.builder().with(entries);
+                return LootTable.builder().pool(pool).build();
+            }
+
+            return null;
+        });
+
     }
 }
