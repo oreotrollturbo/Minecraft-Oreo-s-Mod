@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "tutorialmod:ken_ore",
-    "tutorialmod:ken_block"
+    "tutorialmod:ken_block",
+    "tutorialmod:yabuki_block"
   ]
 }

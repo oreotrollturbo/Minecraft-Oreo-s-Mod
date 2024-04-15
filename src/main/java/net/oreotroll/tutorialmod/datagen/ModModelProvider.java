@@ -24,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KILLZ_BLOCK);//simply makes theese blocks into their cube form
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KUI_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YABUKI_BLOCK);
 
         kenPool.stairs(ModBlocks.KEN_STAIRS);//copies from the ken block texture
         kenPool.slab(ModBlocks.KEN_SLAB);
@@ -55,6 +56,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KEN_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.PIEROGI, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.JETPACK_HELLRIDE_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.KEN_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KEN_AXE, Models.HANDHELD);

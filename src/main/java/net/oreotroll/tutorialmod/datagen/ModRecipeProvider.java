@@ -3,6 +3,7 @@ package net.oreotroll.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
@@ -31,7 +32,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, KEN_SMELTABLES, RecipeCategory.MISC,ModItems.KEN_INGOT,//How its gonna smelt
                 10f, 200,"ken");
         offerBlasting(exporter, KEN_SMELTABLES, RecipeCategory.MISC,ModItems.KEN_INGOT,//How its gonna blast
@@ -144,6 +145,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V',ModItems.KEN_INGOT)
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.YABUKI_BLOCK,1) //THE FUNNI
+                .pattern("VVV")
+                .pattern("VIV")
+                .pattern("VVV")
+                .input('I',Items.DIAMOND)
+                .input('V',ModItems.UNI)
+                .criterion(hasItem(ModItems.UNI),conditionsFromItem(ModItems.UNI))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.YABUKI_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.SOUND_BLOCK,1)
+                .pattern("VVV")
+                .pattern("VIV")
+                .pattern("VVV")
+                .input('I',ModBlocks.NYX_BLOCK)
+                .input('V',Items.NETHERITE_INGOT)
+                .criterion(hasItem(Items.NETHERITE_INGOT),conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SOUND_BLOCK)));
 
 
 

@@ -21,6 +21,8 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 400, 4
                     ,false,false,true)).build();
 
+
+
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }

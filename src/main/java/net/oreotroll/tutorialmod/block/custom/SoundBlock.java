@@ -23,7 +23,7 @@ import java.util.Random;
 
 public class SoundBlock extends Block {
 
-    private Random rand = new Random();
+    public Random rand = new Random();
 
     public SoundBlock(Settings settings) {
         super(settings);

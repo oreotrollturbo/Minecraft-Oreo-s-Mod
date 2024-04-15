@@ -29,6 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NYX_BLOCK);
         addDrop(ModBlocks.UNI_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
+        addDrop(ModBlocks.YABUKI_BLOCK);
 
 
         addDrop(ModBlocks.KEN_STAIRS);//done

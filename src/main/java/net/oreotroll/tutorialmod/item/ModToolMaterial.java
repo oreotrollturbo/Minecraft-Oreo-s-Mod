@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    KEN_INGOT(5,2500,2f,11f,26,
+    KEN_INGOT(5,2500,2f,22f,26,
             ()->Ingredient.ofItems(ModItems.KEN_INGOT));
 
 

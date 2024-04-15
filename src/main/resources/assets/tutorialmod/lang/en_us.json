@@ -3,7 +3,7 @@
   "item.tutorialmod.uni": "Uni",
   "item.tutorialmod.nyx": "Nyx",
   "item.tutorialmod.ken_ingot": "Ken Ingot",
-  "item.tutorialmod.vodka": "vodka",
+  "item.tutorialmod.vodka": "Vodka",
 
 
   "item.tutorialmod.metal_detector": "Metal Detector",
@@ -22,6 +22,11 @@
   "item.tutorialmod.ken_leggings": "Ken Leggings",
   "item.tutorialmod.ken_boots": "Ken Boots",
 
+  "item.tutorialmod.jetpack_hellride_music_disc": "Jetpack Hellride Music Disc",
+  "item.tutorialmod.jetpack_hellride_music_disc.desc": "by Sixty Tunes",
+  "item.tutorialmod.ken_waiting_for_love_music_disc": "Ken Waiting For Love Music Disc",
+  "item.tutorialmod.ken_waiting_for_love_music_disc.desc": "by Ken Himself",
+
 
   "block.tutorialmod.ken_block": "Block of Ken",
   "block.tutorialmod.ken_ore": "Ken Ore",
@@ -29,6 +34,7 @@
   "block.tutorialmod.kui_block": "Block of Kui",
   "block.tutorialmod.killz_block": "Block of Killz",
   "block.tutorialmod.uni_block": "Block of Uni",
+  "block.tutorialmod.yabuki_block": "Block of Yabuki",
 
 
   "block.tutorialmod.sound_block": "Sound Block",
@@ -49,9 +55,9 @@
   "block.tutorialmod.ken_trapdoor": "Ken Trapdoor",
   "block.tutorialmod.nyx_stairs": "Nyx Stairs",
 
+"entity.minecraft.villager.villagertrollturbo": "VillagerTrollturbo",
 
-
-
+  "metal_detector_found_ore":"Metal Detector Jingle",
 
 
   "itemgroup.mymod": "Oreo's Mod items"

@@ -8,33 +8,46 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.oreotroll.tutorialmod.sound.ModSounds;
 import net.oreotroll.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Random;
 
 public class MetalDetectorItem extends Item {
+
+    public Random rand = new Random(); // for the random pitch
+
     public MetalDetectorItem(Settings settings) {
         super(settings);
     }
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
+
+        float random = rand.nextFloat();// implements random into the object
+
         if(!context.getWorld().isClient()){
-            BlockPos positionclicked = context.getBlockPos(); //Takes the position of the block that was right clicked
+            BlockPos positionclicked = context.getBlockPos(); //Takes the position of the block that was right-clicked
             PlayerEntity player = context.getPlayer(); //sets player in an easier to understand variable
             boolean foundBlock = false;
 
-            for(int i = 0; i <= positionclicked.getY() + 64; i++){ //loops through all blocks bellow the block that was right clicked
+            for(int i = 0; i <= positionclicked.getY() + 64; i++){ //loops through all blocks bellow the block that was right-clicked
                 BlockState state = context.getWorld().getBlockState(positionclicked.down(i));
 
                 if(isValuabaleBlock(state)){
                     outputValuableCoordinates(positionclicked.down(i), player,state.getBlock());
-                    foundBlock = true; //sets the founblock to true once its found a block
+                    foundBlock = true; //sets the foundblock to true once its found a block
+
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f); // plays ze sound
 
                     break;
                 }

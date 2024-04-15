@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.oreotroll.tutorialmod.TutorialMod;
 import net.oreotroll.tutorialmod.block.custom.SoundBlock;
+import net.oreotroll.tutorialmod.sound.ModSounds;
 
 public class ModBlocks {
 
@@ -36,7 +37,7 @@ public class ModBlocks {
 
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.BLUE_ICE)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.BLUE_ICE).sounds(ModSounds.SOUND_BLOCK_SOUNDS))); //now uses custom sounds!!
 
     public static final Block KEN_STAIRS = registerBlock("ken_stairs",
             new StairsBlock(ModBlocks.KEN_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
@@ -62,6 +63,9 @@ public class ModBlocks {
 
     public static final Block NYX_STAIRS = registerBlock("nyx_stairs",
             new StairsBlock(ModBlocks.NYX_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
+
+    public static final Block YABUKI_BLOCK = registerBlock("yabuki_block",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).lightLevel(7), UniformIntProvider.create(5, 10)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

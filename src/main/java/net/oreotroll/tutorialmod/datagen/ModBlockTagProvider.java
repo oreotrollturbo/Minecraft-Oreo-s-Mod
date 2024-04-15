@@ -32,7 +32,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NYX_BLOCK)
                 .add(ModBlocks.SOUND_BLOCK)
                 .add(ModBlocks.NYX_STAIRS)
-                .add(ModBlocks.KUI_BLOCK);
+                .add(ModBlocks.KUI_BLOCK)
+                .add(ModBlocks.YABUKI_BLOCK);
 
 
 
@@ -42,7 +43,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.KEN_ORE) //Adds the tier of the tool required
-                .add(ModBlocks.KEN_BLOCK);
+                .add(ModBlocks.KEN_BLOCK)
+                .add(ModBlocks.YABUKI_BLOCK);
 
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))

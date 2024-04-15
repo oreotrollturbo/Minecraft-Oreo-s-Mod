@@ -18,5 +18,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.KEN_HELMET,ModItems.KEN_CHESTPLATE,ModItems.KEN_LEGGINGS,ModItems.KEN_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.JETPACK_HELLRIDE_MUSIC_DISC);
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.JETPACK_HELLRIDE_MUSIC_DISC);
+
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
     }
 }

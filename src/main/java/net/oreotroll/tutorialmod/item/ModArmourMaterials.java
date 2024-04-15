@@ -12,8 +12,7 @@ import java.util.function.Supplier;
 
 public enum ModArmourMaterials implements ArmorMaterial {
     KEN_INGOT("ken_ingot",30,new int[]{ 4,9,7,4},22,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4,0.5f, ()-> Ingredient.ofItems(ModItems.KEN_INGOT))
-    ;
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4,0.5f, ()-> Ingredient.ofItems(ModItems.KEN_INGOT));
 
 
     private final String name;

@@ -25,17 +25,20 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.PIEROGI);
 
-                        entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.JETPACK_HELLRIDE_MUSIC_DISC);
+                        entries.add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
 
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModBlocks.NYX_BLOCK);
                         entries.add(ModBlocks.NYX_STAIRS);
                         entries.add(ModBlocks.KUI_BLOCK);
                         entries.add(ModBlocks.KILLZ_BLOCK);
                         entries.add(ModBlocks.UNI_BLOCK);
+                        entries.add(ModBlocks.YABUKI_BLOCK);
                         entries.add(ModBlocks.KEN_BLOCK);
                         entries.add(ModBlocks.KEN_ORE);
-
 
 
                         entries.add(ModBlocks.KEN_STAIRS);
