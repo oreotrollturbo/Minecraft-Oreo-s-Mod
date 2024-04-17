@@ -4,10 +4,15 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.oreotroll.tutorialmod.block.ModBlocks;
+import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
+import net.oreotroll.tutorialmod.block.entity.renderer.CrockPotBlockEntityRenderer;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.client.ModModelLayers;
 import net.oreotroll.tutorialmod.entity.client.PorcupineModel;
@@ -27,5 +32,7 @@ public class TutorialModClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
 
         HandledScreens.register(ModScreenHandlers.CROCK_POT_SCREEN_HANDLER_SCREEN_HANDLER, CrockPotScreen::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.CROCK_POT_BLOCK_ENTITY, CrockPotBlockEntityRenderer::new);
     }
 }

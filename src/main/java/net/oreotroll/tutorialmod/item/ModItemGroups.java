@@ -20,10 +20,13 @@ public class ModItemGroups {
                         entries.add(ModItems.NYX);
                         entries.add(ModItems.RAW_KEN);
                         entries.add(ModItems.KEN_INGOT);
+
                         entries.add(ModItems.VODKA);
+                        entries.add(ModItems.PIEROGI);
+                        entries.add(ModItems.MEAT_BALLS);
 
                         entries.add(ModItems.METAL_DETECTOR);
-                        entries.add(ModItems.PIEROGI);
+
 
                         entries.add(ModItems.JETPACK_HELLRIDE_MUSIC_DISC);
                         entries.add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);

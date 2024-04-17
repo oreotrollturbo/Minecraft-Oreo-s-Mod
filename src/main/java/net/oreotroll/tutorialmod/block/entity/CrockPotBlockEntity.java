@@ -7,11 +7,17 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.Recipe;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -20,8 +26,11 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.item.ModItems;
+import net.oreotroll.tutorialmod.recipe.CrockPotRecipe;
 import net.oreotroll.tutorialmod.screen.CrockPotScreenHandler;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
@@ -58,6 +67,20 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
                 return 2;
             }
         };
+    }
+
+    @Override
+    public void markDirty() {
+        world.updateListeners(pos, getCachedState(),getCachedState(), 3);
+        super.markDirty();
+    }
+
+    public ItemStack getRenderStack(){
+        if (this.getStack(OUTPUT_SLOT).isEmpty()) {
+            return this.getStack(INPUT_SLOT);
+        } else {
+            return this.getStack(OUTPUT_SLOT);
+        }
     }
 
     @Override
@@ -127,10 +150,13 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private void craftItem() {
-        this.removeStack(INPUT_SLOT, 1);
-        ItemStack result = new ItemStack(ModItems.PIEROGI);
+        Optional<RecipeEntry<CrockPotRecipe>> recipe = getCurrentRecipe();
 
-        this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
+        this.removeStack(INPUT_SLOT, 1);
+
+
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
+                getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private boolean hasCraftingFinished() {
@@ -142,10 +168,18 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private boolean hasRecipie() {
-        ItemStack result = new ItemStack((ModItems.PIEROGI));
-        boolean hasInput = getStack(INPUT_SLOT).getItem() == Items.EGG;
+        Optional<RecipeEntry<CrockPotRecipe>> recipe = getCurrentRecipe();
 
-        return hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        return recipe.isPresent() && canInsertAmountIntoOutputSlot(recipe.get().value().getResult(null))
+                && canInsertItemIntoOutputSlot(recipe.get().value().getResult(null).getItem());
+    }
+
+    private Optional<RecipeEntry<CrockPotRecipe>> getCurrentRecipe() {
+        SimpleInventory inv = new SimpleInventory(this.size());
+        for (int i = 0; i < this.size(); i++){
+            inv.setStack(i, this.getStack(i));
+        }
+        return getWorld().getRecipeManager().getFirstMatch(CrockPotRecipe.Type.INSTANCE, inv, getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
@@ -158,5 +192,17 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
 
     private boolean isOutputSlotEmptyOrRecievable() {
         return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    }
+
+
+    @Nullable
+    @Override
+    public Packet<ClientPlayPacketListener> toUpdatePacket() {
+        return BlockEntityUpdateS2CPacket.create(this);
+    }
+
+    @Override
+    public NbtCompound toInitialChunkDataNbt() {
+        return createNbt();
     }
 }

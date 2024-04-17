@@ -1,0 +1,13 @@
+{
+  "type": "tutorialmod:crock_poting",
+  "ingredients": [
+    {
+      "item": "minecraft:egg",
+      "count": 10
+    }
+  ],
+  "output": {
+    "item": "tutorialmod:pierogi",
+    "count": 1
+  }
+}

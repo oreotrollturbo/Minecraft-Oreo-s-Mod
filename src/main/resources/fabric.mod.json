@@ -24,6 +24,9 @@
 		],
 		"fabric-datagen": [
 			"net.oreotroll.tutorialmod.TutorialModDataGenerator"
+		],
+		"rei_client": [
+			"net.oreotroll.tutorialmod.compat.TutorialModREIClientPlugin"
 		]
 	},
 	"mixins": [

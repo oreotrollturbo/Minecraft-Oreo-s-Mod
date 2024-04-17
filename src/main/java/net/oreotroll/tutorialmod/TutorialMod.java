@@ -10,6 +10,7 @@ import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
+import net.oreotroll.tutorialmod.recipe.ModRecipes;
 import net.oreotroll.tutorialmod.screen.ModScreenHandlers;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 import net.oreotroll.tutorialmod.util.ModCustomTrades;
@@ -39,6 +40,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModRecipes.registerRecipes();
 
 
 

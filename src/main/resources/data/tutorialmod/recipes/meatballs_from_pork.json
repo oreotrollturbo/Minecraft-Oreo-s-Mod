@@ -1,0 +1,13 @@
+{
+  "type": "tutorialmod:crock_poting",
+  "ingredients": [
+    {
+      "item": "minecraft:porkchop",
+      "count": 10
+    }
+  ],
+  "output": {
+    "item": "tutorialmod:meat_balls",
+    "count": 1
+  }
+}

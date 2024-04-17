@@ -80,6 +80,9 @@ public class ModItems {
     public  static  final Item VODKA = registerItem
             ("vodka", new Item(new FabricItemSettings().food(ModFoodComponents.VODKA)));
 
+    public  static  final Item MEAT_BALLS = registerItem
+            ("meat_balls", new Item(new FabricItemSettings().food(ModFoodComponents.MEAT_BALLS)));
+
 
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE,0xa86518,0x3b260f, new FabricItemSettings()));
