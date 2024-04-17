@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-15T02:15:49.0123483	Tutorial Mod/Tags for minecraft:item
-dbf04c437a32f86686f54325718d6bfb31f65fdc data\minecraft\tags\items\trimmable_armor.json
+// 1.20.2	2024-04-17T16:15:37.8807353	Tutorial Mod/Tags for minecraft:item
 41faa57d225753698462ebb5a59f356a58864199 data\minecraft\tags\items\creeper_drop_music_discs.json
+dbf04c437a32f86686f54325718d6bfb31f65fdc data\minecraft\tags\items\trimmable_armor.json
 41faa57d225753698462ebb5a59f356a58864199 data\minecraft\tags\items\music_discs.json

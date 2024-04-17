@@ -11,6 +11,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.oreotroll.tutorialmod.TutorialMod;
+import net.oreotroll.tutorialmod.block.custom.CrockPotBlock;
 import net.oreotroll.tutorialmod.block.custom.SoundBlock;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
@@ -66,6 +67,13 @@ public class ModBlocks {
 
     public static final Block YABUKI_BLOCK = registerBlock("yabuki_block",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).lightLevel(7), UniformIntProvider.create(5, 10)));
+
+
+
+    public static final Block CROCK_POT = registerBlock("crock_pot",
+            new CrockPotBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

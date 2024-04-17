@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
+import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.item.custom.MetalDetectorItem;
 import net.oreotroll.tutorialmod.item.custom.ModArmorItem;
 import net.oreotroll.tutorialmod.sound.ModSounds;
@@ -78,6 +79,11 @@ public class ModItems {
 
     public  static  final Item VODKA = registerItem
             ("vodka", new Item(new FabricItemSettings().food(ModFoodComponents.VODKA)));
+
+
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE,0xa86518,0x3b260f, new FabricItemSettings()));
+
 
     private static void addItemsToIngerdientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_KEN);

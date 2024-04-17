@@ -43,6 +43,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.KUI_BLOCK);
 
 
+        addDrop(ModBlocks.CROCK_POT);
+
+
         addDrop(ModBlocks.KEN_DOOR, doorDrops(ModBlocks.KEN_DOOR)); //done
         addDrop(ModBlocks.KEN_SLAB, slabDrops(ModBlocks.KEN_SLAB));
 

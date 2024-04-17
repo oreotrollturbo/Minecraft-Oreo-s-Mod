@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_vodka",
-      "has_raw_ken",
-      "has_the_recipe"
+      "has_raw_ken"
     ]
   ],
   "rewards": {

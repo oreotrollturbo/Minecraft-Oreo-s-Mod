@@ -7,8 +7,11 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItems;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -38,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.KEN_DOOR);//theese are simply added
         blockStateModelGenerator.registerTrapdoor(ModBlocks.KEN_TRAPDOOR);
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.CROCK_POT);
 
 
 
@@ -71,5 +76,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.KEN_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.KEN_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.KEN_BOOTS));
+
+
+        itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

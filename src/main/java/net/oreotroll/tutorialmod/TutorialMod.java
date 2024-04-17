@@ -2,10 +2,15 @@ package net.oreotroll.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.oreotroll.tutorialmod.block.ModBlocks;
+import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
+import net.oreotroll.tutorialmod.entity.ModEntities;
+import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
+import net.oreotroll.tutorialmod.screen.ModScreenHandlers;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 import net.oreotroll.tutorialmod.util.ModCustomTrades;
 import net.oreotroll.tutorialmod.util.ModLootTableModifiers;
@@ -29,6 +34,11 @@ public class TutorialMod implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorupineAttributes());
+
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 
 

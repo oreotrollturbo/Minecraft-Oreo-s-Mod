@@ -22,6 +22,8 @@
   "item.tutorialmod.ken_leggings": "Ken Leggings",
   "item.tutorialmod.ken_boots": "Ken Boots",
 
+  "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn Egg",
+
   "item.tutorialmod.jetpack_hellride_music_disc": "Jetpack Hellride Music Disc",
   "item.tutorialmod.jetpack_hellride_music_disc.desc": "by Sixty Tunes",
   "item.tutorialmod.ken_waiting_for_love_music_disc": "Ken Waiting For Love Music Disc",
@@ -54,6 +56,8 @@
   "block.tutorialmod.ken_door": "Ken Door",
   "block.tutorialmod.ken_trapdoor": "Ken Trapdoor",
   "block.tutorialmod.nyx_stairs": "Nyx Stairs",
+
+  "block.tutorialmod.crock_pot": "Crock Pot",
 
 "entity.minecraft.villager.villagertrollturbo": "VillagerTrollturbo",
 

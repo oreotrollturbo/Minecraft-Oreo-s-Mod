@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_nyx_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_nyx_block"
     ]
   ],
   "rewards": {

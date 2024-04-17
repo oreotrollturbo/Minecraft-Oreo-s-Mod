@@ -65,6 +65,12 @@ public class ModItemGroups {
                         entries.add(ModItems.KEN_BOOTS);
 
 
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+
+
+                        entries.add(ModBlocks.CROCK_POT);
+
+
 
                         entries.add(Items.EGG);
 

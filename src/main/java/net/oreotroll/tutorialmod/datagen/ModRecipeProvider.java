@@ -2,23 +2,17 @@ package net.oreotroll.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItems;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> KEN_SMELTABLES = List.of(ModItems.RAW_KEN,
@@ -37,8 +31,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 10f, 200,"ken");
         offerBlasting(exporter, KEN_SMELTABLES, RecipeCategory.MISC,ModItems.KEN_INGOT,//How its gonna blast
                 10f, 100,"ken");
-        offerSmelting(exporter, EGG_SMELTABLE, RecipeCategory.MISC,ModItems.PIEROGI,//how its gonna smelt
-                10f, 100,"ken");
+
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.KEN_INGOT, RecipeCategory.DECORATIONS,
                 ModBlocks.KEN_BLOCK); //This single line adds crafting and uncrafting of the ken block
@@ -163,6 +156,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V',Items.NETHERITE_INGOT)
                 .criterion(hasItem(Items.NETHERITE_INGOT),conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SOUND_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CROCK_POT,1)
+                .pattern("QUQ")
+                .pattern("VIV")
+                .pattern("V V")
+                .input('I',Items.CHARCOAL)
+                .input('Q',Items.DIAMOND)
+                .input('U',ModItems.KEN_INGOT)
+                .input('V',Items.STICK)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CROCK_POT)));
 
 
 

@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_uni",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_uni"
     ]
   ],
   "rewards": {

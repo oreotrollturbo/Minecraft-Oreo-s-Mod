@@ -12,13 +12,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.item.ModArmourMaterials;
 
+import java.sql.CallableStatement;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
     public static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 400, 4
+                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.RESISTANCE,  10, 2
                     ,false,false,true)).build();
 
 
@@ -58,7 +59,9 @@ public class ModArmorItem extends ArmorItem {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
-        }
+        } //else {
+            //player.removeStatusEffect(new Status(mapStatusEffect));
+        //}
     }
 
 
