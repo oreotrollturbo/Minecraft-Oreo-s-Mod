@@ -76,6 +76,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DICE);
                         entries.add(ModItems.BULLET);
 
+                        entries.add(ModItems.GUN);
+
 
 
                         entries.add(Items.EGG);

@@ -72,6 +72,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KEN_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KEN_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.GUN, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.DICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BULLET, Models.GENERATED);
 

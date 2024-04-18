@@ -28,6 +28,8 @@ public class MetalDetectorItem extends Item {
         super(settings);
     }
 
+
+
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
 
