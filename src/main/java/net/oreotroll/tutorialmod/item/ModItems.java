@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
 import net.oreotroll.tutorialmod.entity.ModEntities;
+import net.oreotroll.tutorialmod.item.custom.DiceItem;
 import net.oreotroll.tutorialmod.item.custom.MetalDetectorItem;
 import net.oreotroll.tutorialmod.item.custom.ModArmorItem;
 import net.oreotroll.tutorialmod.sound.ModSounds;
@@ -71,6 +72,8 @@ public class ModItems {
             new ArmorItem(ModArmourMaterials.KEN_INGOT, ArmorItem.Type.BOOTS, new  FabricItemSettings()));
 
 
+
+    public static final Item DICE = registerItem("dice",new DiceItem(new FabricItemSettings()));
 
 
 

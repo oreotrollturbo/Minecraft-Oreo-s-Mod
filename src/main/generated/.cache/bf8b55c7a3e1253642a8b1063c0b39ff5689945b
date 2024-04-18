@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-17T17:38:13.3730647	Tutorial Mod/Model Definitions
+// 1.20.2	2024-04-17T23:22:30.9608196	Tutorial Mod/Model Definitions
 1c1dc3d610339864a460396727b356277c688d9c assets\tutorialmod\models\item\ken_leggings.json
 6a1cee9cd7deed2e799f38d5f96ec10cb932b7ba assets\tutorialmod\models\block\ken_pressure_plate.json
 5c2bcd72d91f409d8aee088a51abaf0720ced5bc assets\tutorialmod\models\item\ken_chestplate_lapis_trim.json
@@ -123,12 +123,12 @@ ec062e5dca943ea69d5c2843f78a17ecb71fe5fc assets\tutorialmod\models\block\ken_doo
 1ae93f9a91bf42e76ffa4020c42150479722fa13 assets\tutorialmod\models\item\ken_chestplate_iron_trim.json
 4556892643d4828b8456c50d8347428c684b7c07 assets\tutorialmod\models\block\yabuki_block.json
 bda1e909648ea1f0de7a9a5e0782337efa39a669 assets\tutorialmod\models\item\ken_chestplate_netherite_trim.json
-619d73661e28c5e82b54bb44d9bfec37dcb5c332 assets\tutorialmod\blockstates\ken_slab.json
 a84130a1e69a310e11103a766f70887557461388 assets\tutorialmod\blockstates\ken_button.json
+619d73661e28c5e82b54bb44d9bfec37dcb5c332 assets\tutorialmod\blockstates\ken_slab.json
 1be29c6afc9a9ce317e19fbd5992cb4773bb3718 assets\tutorialmod\models\item\ken_boots_lapis_trim.json
 20962641d7e62f25686fa3fbedade8a035f53c4a assets\tutorialmod\models\item\ken_boots_redstone_trim.json
-4fe66e9449df95fd90a788677482dfd53e4e4a2e assets\tutorialmod\models\item\ken_door.json
 b4e1b68a69362c358e92ba8721dc7d728f9dcc1a assets\tutorialmod\models\block\ken_fence_gate_open.json
+4fe66e9449df95fd90a788677482dfd53e4e4a2e assets\tutorialmod\models\item\ken_door.json
 fda7df3a933b8f09e58fa28726b21909ff59e1f1 assets\tutorialmod\models\item\nyx_block.json
 7e439f9c39ea91be588ddc78cf4cd903b5b9cb70 assets\tutorialmod\blockstates\sound_block.json
 96bcc151532c201c8a0ff1a846b904c0abc43672 assets\tutorialmod\blockstates\uni_block.json
@@ -138,5 +138,6 @@ fda7df3a933b8f09e58fa28726b21909ff59e1f1 assets\tutorialmod\models\item\nyx_bloc
 00dc6f97e3721d3088bc9d7d1e7bf79dfe8574b3 assets\tutorialmod\blockstates\ken_fence_gate.json
 3c474b657865e09ccc403c2fba1571f0468b64cc assets\tutorialmod\models\item\nyx_stairs.json
 12379ab6e495fb8d5f081f83fd3fcaf0364cdec7 assets\tutorialmod\models\block\ken_door_bottom_right_open.json
+798aa8856a8439e5ead445b62c2c79a11612c545 assets\tutorialmod\models\item\dice.json
 37109b6b450c93561b90311eca368ac97c2f37ab assets\tutorialmod\models\block\ken_button.json
 5abfc2343a442f0ede5b03187213221d170d82a1 assets\tutorialmod\models\item\ken_chestplate_diamond_trim.json

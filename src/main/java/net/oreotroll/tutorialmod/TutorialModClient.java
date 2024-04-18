@@ -10,6 +10,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import net.oreotroll.tutorialmod.block.entity.renderer.CrockPotBlockEntityRenderer;
@@ -34,5 +35,7 @@ public class TutorialModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.CROCK_POT_SCREEN_HANDLER_SCREEN_HANDLER, CrockPotScreen::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.CROCK_POT_BLOCK_ENTITY, CrockPotBlockEntityRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.DICE_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 }
