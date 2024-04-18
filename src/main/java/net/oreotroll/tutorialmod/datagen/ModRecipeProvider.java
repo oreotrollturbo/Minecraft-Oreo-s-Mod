@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -39,6 +40,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModBlocks.NYX_BLOCK); //This single line adds crafting and uncrafting of the Nyx block
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.UNI, RecipeCategory.DECORATIONS,
                 ModBlocks.UNI_BLOCK); //This single line adds crafting and uncrafting of the uni block
+
 
 //Adds the ken button hopefully ?
 
@@ -167,6 +169,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V',Items.STICK)
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CROCK_POT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.BULLET,16)
+                .pattern("   ")
+                .pattern("IV ")
+                .pattern("   ")
+                .input('I',Items.GUNPOWDER)
+                .input('V', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.GOLD_INGOT),conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BULLET)));
 
 
 

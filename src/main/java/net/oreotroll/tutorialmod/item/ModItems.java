@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
 import net.oreotroll.tutorialmod.entity.ModEntities;
+import net.oreotroll.tutorialmod.item.custom.BulletItem;
 import net.oreotroll.tutorialmod.item.custom.DiceItem;
 import net.oreotroll.tutorialmod.item.custom.MetalDetectorItem;
 import net.oreotroll.tutorialmod.item.custom.ModArmorItem;
@@ -74,6 +75,8 @@ public class ModItems {
 
 
     public static final Item DICE = registerItem("dice",new DiceItem(new FabricItemSettings()));
+
+    public static final Item BULLET = registerItem("bullet",new BulletItem(new FabricItemSettings()));
 
 
 

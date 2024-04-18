@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
+import net.oreotroll.tutorialmod.entity.custom.BulletProjectileEntity;
 import net.oreotroll.tutorialmod.entity.custom.DiceProjectileEntity;
 import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 
@@ -23,6 +24,12 @@ public class ModEntities {
             new Identifier(TutorialMod.MOD_ID, "dice_projectile"),
             FabricEntityTypeBuilder.<DiceProjectileEntity>create(SpawnGroup.MISC,DiceProjectileEntity::new)
                 .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+
+    public static final EntityType<BulletProjectileEntity> BULLET_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TutorialMod.MOD_ID, "bullet_projectile"),
+            FabricEntityTypeBuilder.<BulletProjectileEntity>create(SpawnGroup.MISC,BulletProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
 
 
 }

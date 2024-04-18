@@ -37,10 +37,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CROCK_POT);
 
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.DICE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.UNI_BLOCK) //Adds the tier of the tool required
-                .add(ModBlocks.NYX_BLOCK);
+                .add(ModBlocks.NYX_BLOCK)
+                .add(ModBlocks.DICE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.KEN_ORE) //Adds the tier of the tool required

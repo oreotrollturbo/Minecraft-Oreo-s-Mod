@@ -1,5 +1,6 @@
 package net.oreotroll.tutorialmod.datagen;
 
+import dev.architectury.platform.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -14,6 +15,7 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.oreotroll.tutorialmod.TutorialMod;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItems;
 
@@ -53,7 +55,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
         addDrop(ModBlocks.KEN_ORE, copperLikeOreDrops(ModBlocks.KEN_ORE, ModItems.RAW_KEN));
-    } //This one steals from the copied coper ore code
+        addDrop(ModBlocks.KEN_ORE, copperLikeOreDrops(ModBlocks.KEN_ORE, ModItems.RAW_KEN));//This one steals from the copied coper ore code
+
+
+
+        addDrop(ModBlocks.DICE_BLOCK, drops(ModItems.DICE));
+
+
+    }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
@@ -61,4 +70,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider
                                 .create(1.0f, 2.0f)))).apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     } //This is said stolen copper ore code
+
+
 }

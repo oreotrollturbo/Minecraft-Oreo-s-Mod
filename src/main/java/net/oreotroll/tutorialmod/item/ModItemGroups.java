@@ -74,6 +74,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CROCK_POT);
 
                         entries.add(ModItems.DICE);
+                        entries.add(ModItems.BULLET);
 
 
 

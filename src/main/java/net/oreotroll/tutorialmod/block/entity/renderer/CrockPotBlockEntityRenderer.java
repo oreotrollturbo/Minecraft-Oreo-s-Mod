@@ -29,9 +29,9 @@ public class CrockPotBlockEntityRenderer implements BlockEntityRenderer<CrockPot
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
         ItemStack stack = entity.getRenderStack();
         matrices.push();
-        matrices.translate(0.5f,0.8f, 0.5f); //Handles the position
-        matrices.scale(0.35f, 0.35f,0.35f); //Handles the size
-        matrices.multiply(RotationAxis.POSITIVE_X.rotation(5));//controlls the rotation of the item 130
+        matrices.translate(0.5f,0.8f, 0.5f); //Handles the position  default: (0.5f,0.8f, 0.5f)
+        matrices.scale(0.35f, 0.35f,0.35f); //Handles the size (0.35f, 0.35f,0.35f)
+        matrices.multiply(RotationAxis.POSITIVE_X.rotation(5));//controlls the rotation default : (5)
 
         itemRenderer.renderItem(stack, ModelTransformationMode.GUI, getLightlevel(entity.getWorld(),
                 entity.getPos()), OverlayTexture.DEFAULT_UV,matrices, vertexConsumers, entity.getWorld(), 1);

@@ -37,5 +37,6 @@ public class TutorialModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.CROCK_POT_BLOCK_ENTITY, CrockPotBlockEntityRenderer::new);
 
         EntityRendererRegistry.register(ModEntities.DICE_PROJECTILE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.BULLET_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 }

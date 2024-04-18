@@ -19,6 +19,8 @@ public class ModSounds {
     public static final SoundEvent SOUND_BLOCK_HIT = registerSoundEvent("sound_block_hit");
     public static final SoundEvent SOUND_BLOCK_FALL = registerSoundEvent("sound_block_fall");
 
+    public static final SoundEvent SOUND_BULLET_SHOOT = registerSoundEvent("sound_bullet_shoot");
+
     public static final SoundEvent JETPACK_HELLRIDE = registerSoundEvent("jetpack_hellride");
     public static final SoundEvent KEN_WAITING_FOR_LOVE = registerSoundEvent("ken_waiting_for_love");
 

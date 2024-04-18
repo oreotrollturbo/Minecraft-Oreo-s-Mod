@@ -50,5 +50,11 @@
         "stream": true
       }
     ]
+  },
+  "sound_bullet_shoot": {
+    "subtitle": "sounds_tutorialmod.sound_bullet_shoot",
+    "sounds":[
+      "tutorialmod:sound_bullet_shoot"
+    ]
   }
 }
