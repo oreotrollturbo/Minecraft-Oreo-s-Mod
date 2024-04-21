@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
+import net.oreotroll.tutorialmod.datagen.ModWorldGenerator;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
@@ -16,6 +17,7 @@ import net.oreotroll.tutorialmod.sound.ModSounds;
 import net.oreotroll.tutorialmod.util.ModCustomTrades;
 import net.oreotroll.tutorialmod.util.ModLootTableModifiers;
 import net.oreotroll.tutorialmod.villager.ModVillagers;
+import net.oreotroll.tutorialmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,6 +44,8 @@ public class TutorialMod implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 
 		ModRecipes.registerRecipes();
+
+		ModWorldGeneration.generateModWorldGen();
 
 
 

@@ -19,7 +19,7 @@ import net.oreotroll.tutorialmod.sound.ModSounds;
 public class ModBlocks {
 
     public static final Block KEN_ORE = registerBlock("ken_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2f), UniformIntProvider.create(5, 10)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE), UniformIntProvider.create(5, 10)));
 
     public static final Block KEN_BLOCK = registerBlock("ken_block",
         new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK))); //adds the actuall block
