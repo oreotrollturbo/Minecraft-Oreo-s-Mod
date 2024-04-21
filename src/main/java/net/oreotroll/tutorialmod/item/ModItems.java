@@ -1,6 +1,5 @@
 package net.oreotroll.tutorialmod.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -13,8 +12,6 @@ import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.item.custom.*;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
-import java.security.PublicKey;
-
 public class ModItems {
 
     public  static  final Item RAW_KEN = registerItem("raw_ken", new Item(new FabricItemSettings())); //Officially adds the item
@@ -26,7 +23,8 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.JETPACK_HELLRIDE,new  FabricItemSettings().maxCount(1),155));
     public  static  final Item KEN_WAITING_FOR_LOVE_MUSIC_DISC = registerItem("ken_waiting_for_love_music_disc", //EPIC MUSIC DISK YIPEEE
             new MusicDiscItem(7, ModSounds.KEN_WAITING_FOR_LOVE,new  FabricItemSettings().maxCount(1),227));
-
+    public  static  final Item CANT_GO_TO_HELL_MUSIC_DISC = registerItem("cant_go_to_hell_music_disc", //EPIC MUSIC DISK YIPEEE
+            new MusicDiscItem(7, ModSounds.CANT_GO_TO_HELL,new  FabricItemSettings().maxCount(1),211));
 
 
 
@@ -73,10 +71,14 @@ public class ModItems {
 
     public static final Item DICE = registerItem("dice",new DiceItem(new FabricItemSettings()));
 
-    public static final Item BULLET = registerItem("bullet",new BulletItem(new FabricItemSettings()));
+    public static final Item BULLET = registerItem("bullet",new BulletItem(new FabricItemSettings().maxCount(30)));
+    public static final Item SNIPER_BULLET = registerItem("sniper_bullet",new BulletItem(new FabricItemSettings().maxCount(6)));
 
     public  static  final Item GUN = registerItem("gun",
-            new GunItem(new FabricItemSettings().maxCount(1)));
+            new ARItem(new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item SNIPER = registerItem("sniper",
+            new SniperItem(new FabricItemSettings().maxCount(1)));
 
 
 

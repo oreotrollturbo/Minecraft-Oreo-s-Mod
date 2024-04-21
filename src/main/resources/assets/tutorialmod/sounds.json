@@ -51,10 +51,30 @@
       }
     ]
   },
+  "cant_go_to_hell": {
+    "sounds":[
+      {
+        "name":"tutorialmod:cant_go_to_hell",
+        "stream": true
+      }
+    ]
+  },
   "sound_bullet_shoot": {
     "subtitle": "sounds_tutorialmod.sound_bullet_shoot",
     "sounds":[
       "tutorialmod:sound_bullet_shoot"
+    ]
+  },
+  "sound_sniper_bullet_shoot": {
+    "subtitle": "sounds_tutorialmod.sound_sniper_bullet_shoot",
+    "sounds":[
+      "tutorialmod:sound_sniper_bullet_shoot"
+    ]
+  },
+  "sound_gun_dry_fire": {
+    "subtitle": "sounds_tutorialmod.sound_gun_dry_fire",
+    "sounds":[
+      "tutorialmod:sound_gun_dry_fire"
     ]
   }
 }

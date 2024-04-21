@@ -1,20 +1,10 @@
 package net.oreotroll.tutorialmod.item.custom;
 
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
-import net.minecraft.world.World;
-import net.oreotroll.tutorialmod.entity.custom.BulletProjectileEntity;
-import net.oreotroll.tutorialmod.sound.ModSounds;
 
 
-public class BulletItem extends Item {
-    public BulletItem(Settings settings) {
+public class SniperBulletItem extends Item {
+    public SniperBulletItem(Settings settings) {
         super(settings);
     }
 

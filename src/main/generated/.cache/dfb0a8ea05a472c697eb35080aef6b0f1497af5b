@@ -1,6 +1,7 @@
-// 1.20.2	2024-04-18T23:13:28.5328455	Tutorial Mod/Recipes
+// 1.20.2	2024-04-21T17:53:25.1309786	Tutorial Mod/Recipes
 9c4cfd4b65eba7cc90249ac52d2d9e04da72f6f2 data\tutorialmod\recipes\ken_axe.json
 8d82d9568c14e487fe81afd701c7e4fedddb1373 data\tutorialmod\recipes\crock_pot.json
+643cb6391611b93bbb71a1dc66dc54231fda21ab data\tutorialmod\recipes\sniper_bullet.json
 0ee811ff66704f8912b83b652e435d36e0f5da40 data\tutorialmod\advancements\recipes\misc\ken_staff.json
 5dfbcc7161ccca56ab012ac99d042431867b0666 data\tutorialmod\advancements\recipes\tools\ken_hoe.json
 009fe6cd1dc319790be538031ebca8f628b1fea6 data\tutorialmod\recipes\bullet.json
@@ -8,6 +9,7 @@ db558c717a14b0da1664d608f8c8918c4c1fef0d data\tutorialmod\recipes\ken_ingot_from
 6024c20105fca1b992797ff634de6b49f1115b54 data\tutorialmod\recipes\ken_ingot.json
 cc1704db307b2ecd677fd1b17c73318c1c902814 data\tutorialmod\recipes\nyx_block.json
 5f56345041bf9c904f8dee425cf6f63b92ec7ed1 data\tutorialmod\advancements\recipes\building_blocks\sound_block.json
+67051e38ce737dc7d67990acfd1f0d38f8ab2af7 data\tutorialmod\advancements\recipes\misc\sniper_bullet.json
 43f72ea74c3ecb9982148ff1700829e69d182494 data\tutorialmod\advancements\recipes\building_blocks\ken_ingot.json
 7c56fcebb23b55e56022ad33d4616b853522fb65 data\tutorialmod\advancements\recipes\misc\ken_slab.json
 e71efcf003395d174cb170f58e09e233bf70bd05 data\tutorialmod\advancements\recipes\misc\vodka.json
@@ -22,6 +24,7 @@ e5e4a0b78a0e366cddff3a19a6dabbab7bc639a0 data\tutorialmod\recipes\sound_block.js
 f78e9231f7e638f2071ee3af640a189354a1e492 data\tutorialmod\advancements\recipes\misc\ken_ingot_from_blasting_ken_ore.json
 05f2173789221d41ef830dd6fb8dd9d21a395895 data\tutorialmod\advancements\recipes\misc\ken_ingot_from_smelting_raw_ken.json
 6957bac87aca47528f1e9e8544234440ef6d8c3f data\tutorialmod\recipes\ken_hoe.json
+7a21cc3f55d15306a76eaf67bf95da4f186a811e data\tutorialmod\recipes\sniper.json
 4e7a11d1f392b34a3b0dbcc17ae5433850502a89 data\tutorialmod\recipes\yabuki_block.json
 533af3b15e094f49bacde2a501ba85d82a9512f3 data\tutorialmod\recipes\ken_slab.json
 c821f6dc6192a72bd63a3ef30ac5fd2ad79676cb data\tutorialmod\advancements\recipes\misc\crock_pot.json
@@ -44,6 +47,7 @@ c5b7edba175f96a0b68010b3fdd33297b19cbe9c data\tutorialmod\recipes\nyx.json
 a0ed640b7e6b25d221b62d1cfe13ce92dae91123 data\tutorialmod\recipes\ken_shovel.json
 2b896f7bb519f7fa5d73d538baac38d774704d88 data\tutorialmod\advancements\recipes\tools\ken_shovel.json
 a1a496dc638f81dbc68ee42a91d84d0dc19d1ad2 data\tutorialmod\advancements\recipes\decorations\nyx_block.json
+0ba02d725cf38b62dedbaffaa2927001c1ee1b56 data\tutorialmod\advancements\recipes\misc\sniper.json
 357be743445f3f41cd9f9b7087e48f916c857c9a data\tutorialmod\recipes\ken_ingot_from_smelting_raw_ken.json
 b11e959105d0df79aad9242f3140a58158178969 data\tutorialmod\recipes\uni_block.json
 972becf326344d96532003de1d303d9c4482cdee data\tutorialmod\recipes\uni.json

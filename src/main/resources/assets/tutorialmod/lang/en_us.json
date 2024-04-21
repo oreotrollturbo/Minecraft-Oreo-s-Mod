@@ -8,8 +8,10 @@
 
   "item.tutorialmod.dice": "Dice",
   "item.tutorialmod.bullet": "Bullet",
+  "item.tutorialmod.sniper_bullet": "Sniper Bullet",
 
   "item.tutorialmod.gun": "Gun",
+  "item.tutorialmod.sniper": "Sniper",
 
 
 
@@ -36,6 +38,8 @@
   "item.tutorialmod.jetpack_hellride_music_disc.desc": "by Sixty Tunes",
   "item.tutorialmod.ken_waiting_for_love_music_disc": "Ken Waiting For Love Music Disc",
   "item.tutorialmod.ken_waiting_for_love_music_disc.desc": "by Ken Himself",
+  "item.tutorialmod.cant_go_to_hell_music_disc": "Can't Go To Hell Music Disc",
+  "item.tutorialmod.cant_go_to_hell_music_disc.desc": "by Sin Shake Sin",
 
 
   "block.tutorialmod.ken_block": "Block of Ken",

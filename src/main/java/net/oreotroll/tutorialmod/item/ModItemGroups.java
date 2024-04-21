@@ -30,6 +30,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.JETPACK_HELLRIDE_MUSIC_DISC);
                         entries.add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
+                        entries.add(ModItems.CANT_GO_TO_HELL_MUSIC_DISC);
 
 
                         entries.add(ModBlocks.SOUND_BLOCK);
@@ -75,12 +76,12 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DICE);
                         entries.add(ModItems.BULLET);
+                        entries.add(ModItems.SNIPER_BULLET);
 
                         entries.add(ModItems.GUN);
+                        entries.add(ModItems.SNIPER);
 
 
-
-                        entries.add(Items.EGG);
 
                     }).build());
 

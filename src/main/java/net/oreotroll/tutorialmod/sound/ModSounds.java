@@ -20,9 +20,12 @@ public class ModSounds {
     public static final SoundEvent SOUND_BLOCK_FALL = registerSoundEvent("sound_block_fall");
 
     public static final SoundEvent SOUND_BULLET_SHOOT = registerSoundEvent("sound_bullet_shoot");
+    public static final SoundEvent SOUND_SNIPER_BULLET_SHOOT = registerSoundEvent("sound_sniper_bullet_shoot");
+    public static final SoundEvent SOUND_GUN_DRY_FIRE = registerSoundEvent("sound_gun_dry_fire");
 
     public static final SoundEvent JETPACK_HELLRIDE = registerSoundEvent("jetpack_hellride");
     public static final SoundEvent KEN_WAITING_FOR_LOVE = registerSoundEvent("ken_waiting_for_love");
+    public static final SoundEvent CANT_GO_TO_HELL = registerSoundEvent("cant_go_to_hell");
 
     public static final BlockSoundGroup SOUND_BLOCK_SOUNDS = new BlockSoundGroup(1f,1f,
             ModSounds.SOUND_BLOCK_BREAK,ModSounds.SOUND_BLOCK_STEP,ModSounds.SOUND_BLOCK_PLACE,

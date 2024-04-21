@@ -28,5 +28,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC);
+
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.CANT_GO_TO_HELL_MUSIC_DISC);
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.CANT_GO_TO_HELL_MUSIC_DISC);
     }
 }

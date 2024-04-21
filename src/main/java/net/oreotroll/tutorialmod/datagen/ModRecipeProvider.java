@@ -188,6 +188,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GUN)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SNIPER_BULLET,6)
+                .pattern("   ")
+                .pattern("IIV")
+                .pattern("   ")
+                .input('I',Items.GUNPOWDER)
+                .input('V', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SNIPER_BULLET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SNIPER,1)
+                .pattern("III")
+                .pattern("III")
+                .pattern("  V")
+                .input('I',ModItems.KEN_INGOT)
+                .input('V', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SNIPER)));
+
+
 
 
 

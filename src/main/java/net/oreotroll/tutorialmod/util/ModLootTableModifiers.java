@@ -28,8 +28,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","chests/stronghold_library");
     private static final Identifier WARDEN_ID =
             new Identifier("minecraft","entities/warden");
-    private static final Identifier SUSPICIOUS_SAND_ID =
-            new Identifier("minecraft","archeology/desert_pyramid");
+    //private static final Identifier SUSPICIOUS_SAND_ID =
+            //new Identifier("minecraft","archeology/desert_pyramid");
 
 
     public static void ModifyLootTables(){
@@ -59,6 +59,16 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.2f))
                         .with(ItemEntry.builder(ModItems.JETPACK_HELLRIDE_MUSIC_DISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(NETHER_BRIDGE.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.CANT_GO_TO_HELL_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

@@ -65,6 +65,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.JETPACK_HELLRIDE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CANT_GO_TO_HELL_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.KEN_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KEN_AXE, Models.HANDHELD);
@@ -73,9 +74,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KEN_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.GUN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SNIPER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BULLET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SNIPER_BULLET, Models.GENERATED);
 
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.KEN_HELMET));
