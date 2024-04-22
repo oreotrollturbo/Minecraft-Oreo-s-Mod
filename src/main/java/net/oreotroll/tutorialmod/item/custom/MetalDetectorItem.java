@@ -41,34 +41,117 @@ public class MetalDetectorItem extends Item {
             boolean foundBlock = false;
 
             for(int i = 0; i <= positionclicked.getY() + 64; i++){ //loops through all blocks bellow the block that was right-clicked
-                BlockState state = context.getWorld().getBlockState(positionclicked.down(i));
+                BlockState state = context.getWorld().getBlockState(positionclicked.down(i));// the i here is used to define how many blocks down it should check
 
-                if(isValuabaleBlock(state)){
+
+                BlockState stateNorthWest = context.getWorld().getBlockState(positionclicked.down(i).north(1).west(1));
+                BlockState stateSouthWest = context.getWorld().getBlockState(positionclicked.down(i).south(1).west(1));
+
+                if(isValuabaleBlock(state)){ //This monstrosity checks for everything
                     outputValuableCoordinates(positionclicked.down(i), player,state.getBlock());
                     foundBlock = true; //sets the foundblock to true once its found a block
-
 
                     context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
                             SoundCategory.BLOCKS,3f,1f); // plays ze sound
 
                     break;
                 }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).west(1));//west
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).west(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f); // plays ze sound
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).south(1));//south
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).south(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).east(1));//east
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).east(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).north(1));//north
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).north(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).south(1).east(1));//southEast
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).south(1).east(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).north(1).east(1));//northEast
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).north(1).east(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).north(1).west(1));//northWest
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).north(1).west(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                state = context.getWorld().getBlockState(positionclicked.down(i).south(1).west(1));//southWest
+                if(isValuabaleBlock(state)){
+                    outputValuableCoordinates(positionclicked.down(i).south(1).west(1), player,state.getBlock());
+                    foundBlock = true;
+
+                    context.getWorld().playSound(null,positionclicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS,3f,1f);
+                    break;
+                }
+
+                if(state.isOf(Blocks.BEDROCK)){
+                    break;
+                }
             }
+
+
+
 
             if(!foundBlock){
                 player.sendMessage(Text.literal("Nothing found :(")); //tells you if it didnt find anything
             }
-
-
-
-
-
         }
 
         context.getStack().damage(1,context.getPlayer(),
                 playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand())); //decreases the durability by 1 every use
-
-
 
     return ActionResult.SUCCESS;
     }

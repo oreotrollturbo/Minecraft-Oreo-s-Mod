@@ -25,11 +25,11 @@ public class ModConfiguredFeatures {
 
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-        List<OreFeatureConfig.Target> overworldRubyOres =
+        List<OreFeatureConfig.Target> overworldKenOres =
                 List.of(OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.KEN_ORE.getDefaultState()));
 
 
-        register(context, KEN_ORE_KEY , Feature.ORE, new OreFeatureConfig(overworldRubyOres, 4));
+        register(context, KEN_ORE_KEY , Feature.ORE, new OreFeatureConfig(overworldKenOres, 3));
 
     }
 

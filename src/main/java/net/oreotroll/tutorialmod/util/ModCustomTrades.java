@@ -16,74 +16,7 @@ import net.oreotroll.tutorialmod.villager.ModVillagers;
 
 public class ModCustomTrades {
     public static void registerCustomTrades() {
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_SWORD, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 67),
-                            new ItemStack(ModItems.KEN_AXE, 1),
-                            6, 5, 0.05f
-                    ));
-                });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.ARMORER, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 70),
-                            new ItemStack(ModItems.KEN_HELMET, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 80),
-                            new ItemStack(ModItems.KEN_CHESTPLATE, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 75),
-                            new ItemStack(ModItems.KEN_LEGGINGS, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 68),
-                            new ItemStack(ModItems.KEN_BOOTS, 1),
-                            6, 5, 0.05f
-                    ));
-                });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_PICKAXE, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_SHOVEL, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_HOE, 1),
-                            6, 5, 0.05f
-                    ));
-                });
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH,5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_SWORD, 1),
-                            6, 5, 0.05f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 67),
-                            new ItemStack(ModItems.KEN_AXE, 1),
-                            6, 5, 0.05f
-                    ));
-                });
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 5,
                 factories -> {
@@ -107,16 +40,6 @@ public class ModCustomTrades {
                             new ItemStack(Items.EMERALD, 2),
                             new ItemStack(ModItems.KEN_STAFF, 1),
                             2, 30, 0.5f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.UNI, 1),
-                            6, 30, 1f
-                    ));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.NYX, 1),
-                            6, 30, 1f
                     ));
                 });
 

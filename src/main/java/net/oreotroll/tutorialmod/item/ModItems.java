@@ -29,7 +29,7 @@ public class ModItems {
 
 
     public  static  final Item METAL_DETECTOR = registerItem("metal_detector",
-            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(128)));
 
     public  static  final Item KEN_STAFF = registerItem("ken_staff",
             new Item(new FabricItemSettings().maxCount(1)));

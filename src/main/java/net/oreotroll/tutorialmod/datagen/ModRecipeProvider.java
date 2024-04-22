@@ -87,14 +87,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.POTATO),conditionsFromItem(Items.POTATO))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.VODKA)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.KEN_STAFF,1) //Adds slabs
-                .pattern("V  ")
-                .pattern("I  ")
-                .pattern("I  ")
-                .input('I',Items.DIAMOND)
-                .input('V',ModItems.KEN_INGOT)
-                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_STAFF)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.KEN_SWORD,1) //Adds slabs
                 .pattern("V  ")
@@ -205,6 +197,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V', Items.IRON_INGOT)
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SNIPER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.METAL_DETECTOR,1)
+                .pattern("VVV")
+                .pattern(" N ")
+                .pattern("III")
+                .input('I',Items.IRON_INGOT)
+                .input('V', Items.DIAMOND)
+                .input('N', Items.NETHERITE_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.METAL_DETECTOR)));
 
 
 
