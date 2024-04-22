@@ -72,6 +72,11 @@ public class ModCustomTrades {
                             new ItemStack(ModItems.UNI, 1),
                             20, 40, 0.0005f
                     ));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModItems.DICE, 1),
+                            64, 2, 0.0005f
+                    ));
                 });
     }
 
