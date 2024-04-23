@@ -79,6 +79,8 @@ public class ModItems {
 
     public  static  final Item SNIPER = registerItem("sniper",
             new SniperItem(new FabricItemSettings().maxCount(1)));
+    public  static  final Item RAIL_GUN = registerItem("rail_gun",
+            new RailGunItem(new FabricItemSettings().maxCount(1)));
 
 
 

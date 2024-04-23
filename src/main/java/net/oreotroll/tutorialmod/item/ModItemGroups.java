@@ -80,6 +80,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GUN);
                         entries.add(ModItems.SNIPER);
+                        entries.add(ModItems.RAIL_GUN);
 
 
 

@@ -41,7 +41,7 @@ public class SniperItem extends Item {
                         ModSounds.SOUND_SNIPER_BULLET_SHOOT, SoundCategory.NEUTRAL, 0.4F, 1.0F);
                 BulletProjectileEntity bulletProjectileEntity = new BulletProjectileEntity(user, world);
                 bulletProjectileEntity.bulletDamage = 100;
-                bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 40.5F, 0.0F);
+                bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 70.5F, 0.0F);
                 world.spawnEntity(bulletProjectileEntity);
             }else {
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
