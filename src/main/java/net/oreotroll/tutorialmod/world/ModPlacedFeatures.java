@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
 
         register(context, KEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.KEN_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(-20))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(-10))));
 
     }
 

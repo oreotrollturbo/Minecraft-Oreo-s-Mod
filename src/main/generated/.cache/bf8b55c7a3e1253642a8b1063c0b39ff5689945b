@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-23T15:05:19.7660465	Tutorial Mod/Model Definitions
+// 1.20.2	2024-04-23T15:18:09.315408	Tutorial Mod/Model Definitions
 1c1dc3d610339864a460396727b356277c688d9c assets\tutorialmod\models\item\ken_leggings.json
 ddfc97de059738b9e405ccc70efcade98191bba9 assets\tutorialmod\models\item\gun.json
 6a1cee9cd7deed2e799f38d5f96ec10cb932b7ba assets\tutorialmod\models\block\ken_pressure_plate.json
@@ -56,8 +56,8 @@ dac8730911a1737e4cdd2e70cfc8d32b0b0ba457 assets\tutorialmod\models\block\sound_b
 64243eb716b5bc521a3fcef4102feb21bb5c634b assets\tutorialmod\models\item\vodka.json
 c4a09b6e8d554199d80981ebfa54f4718c4ff300 assets\tutorialmod\models\block\ken_door_bottom_left_open.json
 566d3e17cca07aebe38cf9e941860c3ce07a3b1f assets\tutorialmod\models\item\pierogi.json
-7d2b508d6ddf5d032e090453328fec9a0dc03a8f assets\tutorialmod\models\item\ken_leggings_copper_trim.json
 5bcbbe01a200bdd906e54ae6b3a768dae87e619e assets\tutorialmod\models\item\ken_block.json
+7d2b508d6ddf5d032e090453328fec9a0dc03a8f assets\tutorialmod\models\item\ken_leggings_copper_trim.json
 b3beaf57cb3d5b65af29ed2633570ccdf909d387 assets\tutorialmod\models\block\ken_slab.json
 9b18848503b03a79f75536337ea14edfd529c151 assets\tutorialmod\blockstates\nyx_stairs.json
 d90f13d611ea3a650cf4ba8140f736aed7e99148 assets\tutorialmod\models\block\killz_block.json
@@ -87,8 +87,8 @@ f630bb000dad03561a7db8eb00702cd728004360 assets\tutorialmod\models\item\ken_boot
 a96c36bf5c99b1fcce1c105d5433ffc5f0523866 assets\tutorialmod\models\item\jetpack_hellride_music_disc.json
 feb35deca3a08b78b2e28bd293d0fe83df4fd2d4 assets\tutorialmod\blockstates\ken_door.json
 a07b270de20d6934bef8657a2e97a97458eb0848 assets\tutorialmod\models\item\bullet.json
-6dcdade585eeae25ec7e937ed6a4dbd11d44c8a8 assets\tutorialmod\models\block\ken_button_inventory.json
 70de400cda3e3a42e3c98f88b6a68d72b9c9f274 assets\tutorialmod\models\item\ken_boots_diamond_trim.json
+6dcdade585eeae25ec7e937ed6a4dbd11d44c8a8 assets\tutorialmod\models\block\ken_button_inventory.json
 2bf38d8cc7bc75af1f72f24b80564ed2154127c3 assets\tutorialmod\models\item\ken_fence.json
 24d9030cbb135e1520d28249d840498972472444 assets\tutorialmod\models\item\cant_go_to_hell_music_disc.json
 d9995057d605720f8d3f4ad10d17fc7f6d90dccd assets\tutorialmod\models\item\ken_chestplate_copper_trim.json

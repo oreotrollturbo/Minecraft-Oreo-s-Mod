@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-23T15:05:19.7636523	Tutorial Mod/Recipes
+// 1.20.2	2024-04-23T15:18:09.3129448	Tutorial Mod/Recipes
 9c4cfd4b65eba7cc90249ac52d2d9e04da72f6f2 data\tutorialmod\recipes\ken_axe.json
 8d82d9568c14e487fe81afd701c7e4fedddb1373 data\tutorialmod\recipes\crock_pot.json
 643cb6391611b93bbb71a1dc66dc54231fda21ab data\tutorialmod\recipes\sniper_bullet.json
@@ -55,5 +55,5 @@ ba5b3a0bdf35eceb8367712636573a30f0822037 data\tutorialmod\advancements\recipes\m
 2e49eb2063165d619b7f5349c2f28ecf779f2eea data\tutorialmod\advancements\recipes\building_blocks\uni.json
 1dc30e97e5788558099936fed84c6706ce9dd72f data\tutorialmod\advancements\recipes\misc\ken_pressure_plate.json
 f0742fbb9a4fe9fd75ad684f1c9f05b27d293f1c data\tutorialmod\advancements\recipes\combat\ken_sword.json
-7951ddb1c7a7570ecab6814bbe61f28c920306bb data\tutorialmod\recipes\metal_detector.json
+1a4e4afe5141e204f61d72dd9dbcca413545d217 data\tutorialmod\recipes\metal_detector.json
 5e4f946d2569185311f38ea146db2774df5ec668 data\tutorialmod\advancements\recipes\tools\ken_pickaxe.json
