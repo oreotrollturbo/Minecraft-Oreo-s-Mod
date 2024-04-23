@@ -2,6 +2,8 @@ package net.oreotroll.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
@@ -199,14 +201,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SNIPER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.METAL_DETECTOR,1)
-                .pattern("VVV")
+                .pattern("VJV")
                 .pattern(" N ")
                 .pattern("III")
-                .input('I',Items.IRON_INGOT)
+                .input('I',Blocks.IRON_BLOCK)
                 .input('V', Items.DIAMOND)
-                .input('N', Items.NETHERITE_INGOT)
+                .input('N', ModItems.KEN_INGOT)
+                .input('J', Blocks.JUKEBOX)
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.METAL_DETECTOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.RAIL_GUN,1)
+                .pattern("III")
+                .pattern(" VN")
+                .pattern("   ")
+                .input('V',ModBlocks.KEN_BLOCK)
+                .input('I', Items.DIAMOND_BLOCK)
+                .input('N', Items.NETHERITE_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAIL_GUN)));
 
 
 

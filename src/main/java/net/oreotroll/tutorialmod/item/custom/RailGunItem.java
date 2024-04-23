@@ -23,12 +23,7 @@ public class RailGunItem extends Item {
     public RailGunItem(Settings settings) {
         super(settings);
     }
-
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.SPYGLASS;
-    }
-
+    
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
