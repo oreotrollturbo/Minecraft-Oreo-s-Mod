@@ -30,6 +30,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.KEN_BLOCK)
                 .add(ModBlocks.UNI_BLOCK)
                 .add(ModBlocks.NYX_BLOCK)
+                .add(ModBlocks.DEATH__BLOCK)
                 .add(ModBlocks.SOUND_BLOCK)
                 .add(ModBlocks.NYX_STAIRS)
                 .add(ModBlocks.KUI_BLOCK)
@@ -43,6 +44,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.UNI_BLOCK) //Adds the tier of the tool required
                 .add(ModBlocks.NYX_BLOCK)
+                .add(ModBlocks.DEATH__BLOCK)
                 .add(ModBlocks.DICE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)

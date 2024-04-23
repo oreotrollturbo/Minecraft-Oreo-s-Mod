@@ -1,5 +1,6 @@
-// 1.20.2	2024-04-23T15:18:09.3129448	Tutorial Mod/Recipes
+// 1.20.2	2024-04-23T20:19:11.3851298	Tutorial Mod/Recipes
 9c4cfd4b65eba7cc90249ac52d2d9e04da72f6f2 data\tutorialmod\recipes\ken_axe.json
+e4c5062a645748d3c78a24ea949f860f0266f7ae data\tutorialmod\advancements\recipes\decorations\death__block.json
 8d82d9568c14e487fe81afd701c7e4fedddb1373 data\tutorialmod\recipes\crock_pot.json
 643cb6391611b93bbb71a1dc66dc54231fda21ab data\tutorialmod\recipes\sniper_bullet.json
 5dfbcc7161ccca56ab012ac99d042431867b0666 data\tutorialmod\advancements\recipes\tools\ken_hoe.json
@@ -8,15 +9,18 @@ db558c717a14b0da1664d608f8c8918c4c1fef0d data\tutorialmod\recipes\ken_ingot_from
 6024c20105fca1b992797ff634de6b49f1115b54 data\tutorialmod\recipes\ken_ingot.json
 cc1704db307b2ecd677fd1b17c73318c1c902814 data\tutorialmod\recipes\nyx_block.json
 5f56345041bf9c904f8dee425cf6f63b92ec7ed1 data\tutorialmod\advancements\recipes\building_blocks\sound_block.json
+08bba19cee5d08c2c7c75dcd13f6ddc8eda36ba4 data\tutorialmod\advancements\recipes\building_blocks\death_.json
 67051e38ce737dc7d67990acfd1f0d38f8ab2af7 data\tutorialmod\advancements\recipes\misc\sniper_bullet.json
-7c56fcebb23b55e56022ad33d4616b853522fb65 data\tutorialmod\advancements\recipes\misc\ken_slab.json
 43f72ea74c3ecb9982148ff1700829e69d182494 data\tutorialmod\advancements\recipes\building_blocks\ken_ingot.json
+7c56fcebb23b55e56022ad33d4616b853522fb65 data\tutorialmod\advancements\recipes\misc\ken_slab.json
 e71efcf003395d174cb170f58e09e233bf70bd05 data\tutorialmod\advancements\recipes\misc\vodka.json
 ff5d2045daaaaeeb80b34b67e442bb36e8b62856 data\tutorialmod\recipes\ken_pickaxe.json
 a86e8fbcf1cb5fa467af92dda3c14f5679fc7265 data\tutorialmod\recipes\gun.json
+05cc1f76f6944fb04ad7bdcf00f0fc43b8db4866 data\tutorialmod\recipes\death_.json
 9ae5a6b856254ac8d56a6923db8bbbeef4e2f88b data\tutorialmod\recipes\vodka.json
 3da1ac6b66f5edf0d79e2607b63491ce2b64ed1f data\tutorialmod\advancements\recipes\misc\raw_ken.json
 1a5f579a6ffa528295e16f83fafafd9add231245 data\tutorialmod\advancements\recipes\building_blocks\nyx.json
+0e737ab3459e2c8621859544aabed56c605e292f data\tutorialmod\recipes\death__block.json
 55f57fe836ce42f380efae4bdde6c430096c399d data\tutorialmod\advancements\recipes\misc\metal_detector.json
 2e027e4d01161d0f80e4fd38a609e31e2b649f34 data\tutorialmod\recipes\ken_block.json
 3d2d48b1a222b2a0424b224e7244a7b6fcf5ed87 data\tutorialmod\advancements\recipes\misc\ken_ingot_from_blasting_raw_ken.json

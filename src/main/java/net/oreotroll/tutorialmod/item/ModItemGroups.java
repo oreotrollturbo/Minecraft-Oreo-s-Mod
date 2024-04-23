@@ -18,6 +18,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.UNI);
                         entries.add(ModItems.NYX);
+                        entries.add(ModItems.DEATH_);
                         entries.add(ModItems.RAW_KEN);
                         entries.add(ModItems.KEN_INGOT);
 
@@ -36,6 +37,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModBlocks.NYX_BLOCK);
+                        entries.add(ModBlocks.DEATH__BLOCK);
                         entries.add(ModBlocks.NYX_STAIRS);
                         entries.add(ModBlocks.KUI_BLOCK);
                         entries.add(ModBlocks.KILLZ_BLOCK);

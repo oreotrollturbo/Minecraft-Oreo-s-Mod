@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-23T15:18:09.3119369	Tutorial Mod/Block Loot Tables
+// 1.20.2	2024-04-23T20:19:11.3825552	Tutorial Mod/Block Loot Tables
 3f9100a729d0747ba0e7abd53f30fd53403305b2 data\tutorialmod\loot_tables\blocks\ken_fence_gate.json
 9b5cb75611018dc57b46c9a6fa3e324e1b994ba0 data\tutorialmod\loot_tables\blocks\ken_button.json
 3a457b4e7a8d294876f5bb8799a8d5f5c3c96ebe data\tutorialmod\loot_tables\blocks\ken_trapdoor.json
@@ -17,4 +17,5 @@ fc8c65fe611781190e5fcf9070b177df0df2d9a9 data\tutorialmod\loot_tables\blocks\cro
 22d3d1845443ecc7a99508d94d0cf569c20f52c9 data\tutorialmod\loot_tables\blocks\ken_block.json
 b35126cd5d371071bf076f30dd37cdacee09ec2e data\tutorialmod\loot_tables\blocks\ken_fence.json
 fec4ac2ea7e701baee9df56b59cd08207f0d7f56 data\tutorialmod\loot_tables\blocks\ken_pressure_plate.json
+1292c282f244ccdc1d7d878e8324447afa7e2fa9 data\tutorialmod\loot_tables\blocks\death__block.json
 28244e60d0450d2ef6bec3b331a42ac49584abd4 data\tutorialmod\loot_tables\blocks\ken_door.json

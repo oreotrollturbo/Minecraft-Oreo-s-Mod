@@ -2,6 +2,7 @@
   "item.tutorialmod.raw_ken": "Raw Ken",
   "item.tutorialmod.uni": "Uni",
   "item.tutorialmod.nyx": "Nyx",
+  "item.tutorialmod.death_": "Death_",
   "item.tutorialmod.ken_ingot": "Ken Ingot",
   "item.tutorialmod.vodka": "Vodka",
 
@@ -44,6 +45,7 @@
 
 
   "block.tutorialmod.ken_block": "Block of Ken",
+  "block.tutorialmod.death__block": "Block of Death_",
   "block.tutorialmod.ken_ore": "Ken Ore",
   "block.tutorialmod.nyx_block": "Block of Nyx",
   "block.tutorialmod.kui_block": "Block of Kui",

@@ -24,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KEN_ORE);
         BlockStateModelGenerator.BlockTexturePool nyxPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NYX_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNI_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEATH__BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KILLZ_BLOCK);//simply makes theese blocks into their cube form
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KUI_BLOCK);
@@ -58,6 +59,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_KEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.VODKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.NYX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEATH_, Models.GENERATED);
         itemModelGenerator.register(ModItems.KEN_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.PIEROGI, Models.GENERATED);

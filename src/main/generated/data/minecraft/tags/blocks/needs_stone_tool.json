@@ -3,6 +3,7 @@
   "values": [
     "tutorialmod:uni_block",
     "tutorialmod:nyx_block",
+    "tutorialmod:death__block",
     "tutorialmod:dice_block"
   ]
 }

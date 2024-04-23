@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-23T15:18:09.315408	Tutorial Mod/Model Definitions
+// 1.20.2	2024-04-23T20:19:11.389205	Tutorial Mod/Model Definitions
 1c1dc3d610339864a460396727b356277c688d9c assets\tutorialmod\models\item\ken_leggings.json
 ddfc97de059738b9e405ccc70efcade98191bba9 assets\tutorialmod\models\item\gun.json
 6a1cee9cd7deed2e799f38d5f96ec10cb932b7ba assets\tutorialmod\models\block\ken_pressure_plate.json
@@ -41,6 +41,7 @@ f3ebfeeca1db6144a1d45fa93c61f656dd8964a4 assets\tutorialmod\models\item\ken_ches
 9120768d699b27081e2614cfb08a15600bd2d50a assets\tutorialmod\models\item\ken_wall.json
 0a0c40fe4043a3abb68db58ba16a97d90eb75f77 assets\tutorialmod\models\block\nyx_stairs.json
 57922cefdc302da3fd306bfb54cdcf8657c9e1e6 assets\tutorialmod\models\block\ken_fence_side.json
+0b7deece06d8133f0893222ba0a92419812fb4c2 assets\tutorialmod\models\block\death__block.json
 7c4f30402c2fc0a7cb21739785e35fdfdc4d872f assets\tutorialmod\models\item\ken_leggings_netherite_trim.json
 c716108fa70855b59ef1e6c510a7810da38f7d7f assets\tutorialmod\models\item\ken_chestplate_gold_trim.json
 785bdf23a15ec9ae0ba49142481f0d35ef6675ad assets\tutorialmod\models\item\ken_helmet_emerald_trim.json
@@ -49,6 +50,7 @@ c7cc415bd10a991a48413006d2a83979058ca92f assets\tutorialmod\models\block\ken_sta
 70b700ba2731382790bd467623144cb5b222b772 assets\tutorialmod\models\item\ken_helmet_redstone_trim.json
 7b61ce0568f09befc08f09852ff8d46bbd89838b assets\tutorialmod\blockstates\nyx_block.json
 28010cf439ca066f219b3430c2b4396b76de4c7f assets\tutorialmod\models\item\ken_boots.json
+c83dc82348f9c213f321f1f55babeca466bd0dda assets\tutorialmod\blockstates\death__block.json
 dac8730911a1737e4cdd2e70cfc8d32b0b0ba457 assets\tutorialmod\models\block\sound_block.json
 1624095c66575cf46058ada243f36f5850f7b1c3 assets\tutorialmod\models\item\ken_boots_iron_trim.json
 234380f36be6e2cf7e727d001888d8dc00862dba assets\tutorialmod\models\block\ken_trapdoor_top.json
@@ -73,6 +75,7 @@ bdb53bfa775a05e5405f87dd2e0888fb4237ccfd assets\tutorialmod\models\item\killz_bl
 020bc2da8d6e0bc6584d5f22c3c42257c39c0d4a assets\tutorialmod\models\item\ken_helmet_netherite_trim.json
 8b4c2f27d73d87c63ca480319a376f3c50b74911 assets\tutorialmod\models\item\ken_helmet_iron_trim.json
 a7282ed8abe80b427e19ae28f07f756f34780b3b assets\tutorialmod\models\item\ken_helmet_diamond_trim.json
+930b262c05abb0b1ba8ac6c38dbedf2a614a4302 assets\tutorialmod\models\item\death_.json
 135ddff71aedd5d0c0d03ba12540841980e6ab05 assets\tutorialmod\models\block\ken_button_pressed.json
 2c268360aa2cfa00b228e5e8d4871234d4896278 assets\tutorialmod\models\block\ken_fence_inventory.json
 1fedd550ca0ffa350937fcb5d95157b6ab279477 assets\tutorialmod\models\item\ken_button.json
@@ -87,8 +90,8 @@ f630bb000dad03561a7db8eb00702cd728004360 assets\tutorialmod\models\item\ken_boot
 a96c36bf5c99b1fcce1c105d5433ffc5f0523866 assets\tutorialmod\models\item\jetpack_hellride_music_disc.json
 feb35deca3a08b78b2e28bd293d0fe83df4fd2d4 assets\tutorialmod\blockstates\ken_door.json
 a07b270de20d6934bef8657a2e97a97458eb0848 assets\tutorialmod\models\item\bullet.json
-70de400cda3e3a42e3c98f88b6a68d72b9c9f274 assets\tutorialmod\models\item\ken_boots_diamond_trim.json
 6dcdade585eeae25ec7e937ed6a4dbd11d44c8a8 assets\tutorialmod\models\block\ken_button_inventory.json
+70de400cda3e3a42e3c98f88b6a68d72b9c9f274 assets\tutorialmod\models\item\ken_boots_diamond_trim.json
 2bf38d8cc7bc75af1f72f24b80564ed2154127c3 assets\tutorialmod\models\item\ken_fence.json
 24d9030cbb135e1520d28249d840498972472444 assets\tutorialmod\models\item\cant_go_to_hell_music_disc.json
 d9995057d605720f8d3f4ad10d17fc7f6d90dccd assets\tutorialmod\models\item\ken_chestplate_copper_trim.json
@@ -107,6 +110,7 @@ d59167e0328f8b5730fc5f0cacfc22110a4a2507 assets\tutorialmod\models\block\ken_wal
 583108886b63d4e1d6e27026eb08dc5e3782fb61 assets\tutorialmod\models\item\raw_ken.json
 908972f2738dad6b5d2eb4b853d024a5ac93eb6e assets\tutorialmod\blockstates\ken_fence.json
 f669bc153f3ec9817b397c7270631d115bfb9b56 assets\tutorialmod\blockstates\killz_block.json
+d15831613d4f7a1fd2b35342e7be8ad6f680f8c7 assets\tutorialmod\models\item\death__block.json
 ed0697f72f183a7569ce4b7a72fcf461e5874dc4 assets\tutorialmod\blockstates\crock_pot.json
 02a9364ce6f2d1d681b894ccf5ff535512b83b16 assets\tutorialmod\models\item\ken_chestplate_emerald_trim.json
 5492f9e2ed9fb3f7949c46a9c860054fe84f1f2d assets\tutorialmod\models\item\ken_leggings_redstone_trim.json

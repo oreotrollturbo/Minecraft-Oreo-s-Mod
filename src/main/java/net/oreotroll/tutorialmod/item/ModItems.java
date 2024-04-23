@@ -17,6 +17,7 @@ public class ModItems {
     public  static  final Item RAW_KEN = registerItem("raw_ken", new Item(new FabricItemSettings())); //Officially adds the item
     public  static  final Item UNI = registerItem("uni", new Item(new FabricItemSettings()));
     public  static  final Item NYX = registerItem("nyx", new Item(new FabricItemSettings()));
+    public  static  final Item DEATH_ = registerItem("death_", new Item(new FabricItemSettings()));
     public  static  final Item KEN_INGOT = registerItem("ken_ingot", new Item(new FabricItemSettings()));
 
     public  static  final Item JETPACK_HELLRIDE_MUSIC_DISC = registerItem("jetpack_hellride_music_disc", //EPIC MUSIC DISK YIPEEE
@@ -102,6 +103,7 @@ public class ModItems {
         entries.add(RAW_KEN);
         entries.add(UNI);//adds the item
         entries.add(NYX);
+        entries.add(DEATH_);
         entries.add(KEN_INGOT);
         entries.add(METAL_DETECTOR);
     }

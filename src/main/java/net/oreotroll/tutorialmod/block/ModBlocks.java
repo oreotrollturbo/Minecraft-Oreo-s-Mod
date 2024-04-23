@@ -27,6 +27,9 @@ public class ModBlocks {
     public static final Block NYX_BLOCK = registerBlock("nyx_block",
             new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK))); //adds the actuall block
 
+    public static final Block DEATH__BLOCK = registerBlock("death__block",
+            new Block(FabricBlockSettings.copyOf(Blocks.ANVIL)));
+
     public static final Block KUI_BLOCK = registerBlock("kui_block",
             new Block(FabricBlockSettings.copyOf(Blocks.FIRE))); //adds the actuall block
 

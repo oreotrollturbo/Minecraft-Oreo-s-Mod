@@ -40,6 +40,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModBlocks.NYX_BLOCK); //This single line adds crafting and uncrafting of the Nyx block
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.UNI, RecipeCategory.DECORATIONS,
                 ModBlocks.UNI_BLOCK); //This single line adds crafting and uncrafting of the uni block
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.DEATH_, RecipeCategory.DECORATIONS,
+                ModBlocks.DEATH__BLOCK);
 
 
 //Adds the ken button hopefully ?

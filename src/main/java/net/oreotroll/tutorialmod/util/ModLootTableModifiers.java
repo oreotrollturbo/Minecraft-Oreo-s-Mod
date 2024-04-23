@@ -28,6 +28,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","chests/stronghold_library");
     private static final Identifier WARDEN_ID =
             new Identifier("minecraft","entities/warden");
+    private static final Identifier ENDER_DRAGON_ID =
+            new Identifier("minecraft","entities/ender_dragon");
     //private static final Identifier SUSPICIOUS_SAND_ID =
             //new Identifier("minecraft","archeology/desert_pyramid");
 
@@ -99,6 +101,15 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(1f)) //Drops 100% of the time
                         .with(ItemEntry.builder(ModItems.NYX))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(6.0f, 9.3f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(ENDER_DRAGON_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f)) //Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.DEATH_))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(7.0f, 12.3f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
