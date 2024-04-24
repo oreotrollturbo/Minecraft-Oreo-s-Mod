@@ -76,5 +76,23 @@
     "sounds":[
       "tutorialmod:sound_gun_dry_fire"
     ]
+  },
+  "sound_rail_gun_shot": {
+    "subtitle": "sounds_tutorialmod.sound_rail_gun_shot",
+    "sounds":[
+      "tutorialmod:sound_rail_gun_shot"
+    ]
+  },
+  "sound_rail_gun_windup": {
+    "subtitle": "sounds_tutorialmod.sound_rail_gun_windup",
+    "sounds":[
+      "tutorialmod:sound_rail_gun_windup"
+    ]
+  },
+  "sound_rail_gun_windown": {
+    "subtitle": "sounds_tutorialmod.sound_rail_gun_windown",
+    "sounds":[
+      "tutorialmod:sound_rail_gun_windown"
+    ]
   }
 }

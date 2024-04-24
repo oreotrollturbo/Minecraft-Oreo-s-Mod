@@ -2,11 +2,13 @@ package net.oreotroll.tutorialmod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
@@ -38,5 +40,7 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.DICE_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.BULLET_PROJECTILE, FlyingItemEntityRenderer::new);
+
+        ParticleFactoryRegistry.getInstance().register(TutorialMod.GREEN_FLAME, FlameParticle.Factory::new);
     }
 }

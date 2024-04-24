@@ -3,7 +3,12 @@ package net.oreotroll.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.particle.DefaultParticleType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import net.oreotroll.tutorialmod.datagen.ModWorldGenerator;
@@ -47,10 +52,11 @@ public class TutorialMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
+		Registry.register(Registries.PARTICLE_TYPE, new Identifier("modid", "green_flame"), GREEN_FLAME);
 
 
 		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
-
-
 	}
+
+	public static final DefaultParticleType GREEN_FLAME = FabricParticleTypes.simple();
 }

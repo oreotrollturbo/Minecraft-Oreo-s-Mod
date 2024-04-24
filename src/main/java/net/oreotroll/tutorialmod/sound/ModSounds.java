@@ -22,6 +22,9 @@ public class ModSounds {
     public static final SoundEvent SOUND_BULLET_SHOOT = registerSoundEvent("sound_bullet_shoot");
     public static final SoundEvent SOUND_SNIPER_BULLET_SHOOT = registerSoundEvent("sound_sniper_bullet_shoot");
     public static final SoundEvent SOUND_GUN_DRY_FIRE = registerSoundEvent("sound_gun_dry_fire");
+    public static final SoundEvent SOUND_RAIL_GUN_SHOT = registerSoundEvent("sound_rail_gun_shot");
+    public static final SoundEvent SOUND_RAIL_GUN_WINDUP = registerSoundEvent("sound_rail_gun_windup");
+    public static final SoundEvent SOUND_RAIL_GUN_WINDOWN = registerSoundEvent("sound_rail_gun_windown");
 
     public static final SoundEvent JETPACK_HELLRIDE = registerSoundEvent("jetpack_hellride");
     public static final SoundEvent KEN_WAITING_FOR_LOVE = registerSoundEvent("ken_waiting_for_love");
