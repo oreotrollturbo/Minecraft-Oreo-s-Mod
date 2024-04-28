@@ -44,16 +44,14 @@ public class ParticleProjectileEntity extends ThrownItemEntity {
 
 
     private void spawnParticles(int amount) {
-        this.getWorld().addParticle(ParticleTypes.SONIC_BOOM, this.getParticleX(0.5), this.getRandomBodyY(), this.getParticleZ(0.5),0.0,0.0,0.0 );
+        this.getWorld().addParticle(ParticleTypes.ELECTRIC_SPARK, this.getParticleX(0.5), this.getRandomBodyY(), this.getParticleZ(0.5),0.0,0.0,0.0 );
     }
     private void spawnBubbleParticles(int amount) {
         this.getWorld().addParticle(ParticleTypes.BUBBLE, this.getParticleX(0.5), this.getRandomBodyY(), this.getParticleZ(0.5),0.0,0.0,0.0 );
     }
 
-    private void spawnRailgunParticles(int amount) {
-        this.getWorld().addParticle(ParticleTypes.SONIC_BOOM, this.getParticleX(0.5), this.getRandomBodyY(), this.getParticleZ(0.5),0.0,0.0,0.0 );
-    }
 
+    private int tickCounter = 0;
 
     @Override
     public void tick() {
@@ -65,6 +63,7 @@ public class ParticleProjectileEntity extends ThrownItemEntity {
                 spawnParticles(1);
             }
         }
+        tickCounter++;
         super.tick();
     }
 

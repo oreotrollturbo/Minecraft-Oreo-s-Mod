@@ -52,10 +52,13 @@ public class TutorialMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
-		Registry.register(Registries.PARTICLE_TYPE, new Identifier("modid", "green_flame"), GREEN_FLAME);
-
-
 		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
+
+
+
+
+		Registry.register(Registries.PARTICLE_TYPE, new Identifier("tutorialmod", "green_flame"), GREEN_FLAME);
+
 	}
 
 	public static final DefaultParticleType GREEN_FLAME = FabricParticleTypes.simple();
