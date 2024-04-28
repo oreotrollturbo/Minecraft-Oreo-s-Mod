@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:charcoal"
+    },
+    "Q": {
+      "item": "minecraft:diamond"
+    },
+    "U": {
+      "item": "tutorialmod:ken_ingot"
+    },
+    "V": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "QUQ",
+    "VIV",
+    "V V"
+  ],
+  "result": {
+    "item": "tutorialmod:crock_pot"
+  },
+  "show_notification": true
+}

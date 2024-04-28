@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "V": {
+      "item": "tutorialmod:uni"
+    }
+  },
+  "pattern": [
+    "VVV",
+    "VIV",
+    "VVV"
+  ],
+  "result": {
+    "item": "tutorialmod:yabuki_block"
+  },
+  "show_notification": true
+}

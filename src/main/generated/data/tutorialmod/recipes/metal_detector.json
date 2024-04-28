@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "J": {
+      "item": "minecraft:jukebox"
+    },
+    "N": {
+      "item": "tutorialmod:ken_ingot"
+    },
+    "V": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "VJV",
+    " N ",
+    "III"
+  ],
+  "result": {
+    "item": "tutorialmod:metal_detector"
+  },
+  "show_notification": true
+}

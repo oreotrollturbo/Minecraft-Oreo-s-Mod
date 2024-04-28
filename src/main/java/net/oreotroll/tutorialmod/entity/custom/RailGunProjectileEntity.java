@@ -3,36 +3,28 @@ package net.oreotroll.tutorialmod.entity.custom;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
-import net.minecraft.particle.ItemStackParticleEffect;
-import net.minecraft.particle.ParticleEffect;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
-import net.oreotroll.tutorialmod.block.ModBlocks;
-import net.oreotroll.tutorialmod.block.custom.DiceBlock;
 import net.oreotroll.tutorialmod.entity.ModEntities;
-import net.oreotroll.tutorialmod.item.ModItems;
 
-public class BulletProjectileEntity extends ThrownItemEntity {
+public class RailGunProjectileEntity extends ThrownItemEntity {
 
-    public int bulletDamage = 30; //the damage of the bullet 30 by default
+    public int bulletDamage = 500; //the damage of the bullet 30 by default
 
 
-    public BulletProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public RailGunProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public BulletProjectileEntity(LivingEntity livingEntity, World world) {
-        super(ModEntities.BULLET_PROJECTILE,livingEntity, world);
+    public RailGunProjectileEntity(LivingEntity livingEntity, World world) {
+        super(ModEntities.RAILGUN_PROJECTILE,livingEntity, world);
     }
 
     @Override
@@ -59,8 +51,22 @@ public class BulletProjectileEntity extends ThrownItemEntity {
         super.onCollision(hitResult);
         if (!this.getWorld().isClient) {
             this.getWorld().sendEntityStatus(this, (byte) 3);
-            this.discard();
         }
     }
 
+    protected int waterTickCounter = 0;
+
+    @Override
+    public void tick() {
+
+        if (this.getWorld().isClient){
+            if (isTouchingWater()){
+                if (waterTickCounter >= 5){//kills the projectile after one fourth of a second in water
+                    discard();
+                    waterTickCounter++;
+                }
+            }
+        }
+        super.tick();
+    }
 }

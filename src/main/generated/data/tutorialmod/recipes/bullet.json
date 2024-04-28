@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:gunpowder"
+    },
+    "V": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "IV ",
+    "   "
+  ],
+  "result": {
+    "count": 16,
+    "item": "tutorialmod:bullet"
+  },
+  "show_notification": true
+}

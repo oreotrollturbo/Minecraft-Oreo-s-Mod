@@ -8,9 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.TutorialMod;
-import net.oreotroll.tutorialmod.entity.custom.BulletProjectileEntity;
-import net.oreotroll.tutorialmod.entity.custom.DiceProjectileEntity;
-import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
+import net.oreotroll.tutorialmod.entity.custom.*;
 
 public class ModEntities {
 
@@ -29,6 +27,22 @@ public class ModEntities {
             new Identifier(TutorialMod.MOD_ID, "bullet_projectile"),
             FabricEntityTypeBuilder.<BulletProjectileEntity>create(SpawnGroup.MISC,BulletProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
+
+    public static final EntityType<RailGunProjectileEntity> RAILGUN_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TutorialMod.MOD_ID, "railgun_projectile"),
+            FabricEntityTypeBuilder.<RailGunProjectileEntity>create(SpawnGroup.MISC,RailGunProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.7f, 0.7f)).build());
+
+    public static final EntityType<ParticleProjectileEntity> PARTICLE_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TutorialMod.MOD_ID, "particle_projectile"),
+            FabricEntityTypeBuilder.<ParticleProjectileEntity>create(SpawnGroup.MISC,ParticleProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
+
+    public static final EntityType<RailgunParticleProjectileEntity> RAILGUN_PARTICLE_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TutorialMod.MOD_ID, "railgun_particle_projectile"),
+            FabricEntityTypeBuilder.<RailgunParticleProjectileEntity>create(SpawnGroup.MISC,RailgunParticleProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
+
 
 
 }

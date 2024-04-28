@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "tutorialmod:ken_ingot"
+    },
+    "V": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "  V",
+    "   "
+  ],
+  "result": {
+    "item": "tutorialmod:gun"
+  },
+  "show_notification": true
+}

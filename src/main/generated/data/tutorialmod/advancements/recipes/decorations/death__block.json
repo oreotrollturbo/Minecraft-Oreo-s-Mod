@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_death_": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:death_"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:death__block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_death_"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:death__block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

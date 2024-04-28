@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tutorialmod:item/cant_go_to_hell_music_disc"
+  }
+}

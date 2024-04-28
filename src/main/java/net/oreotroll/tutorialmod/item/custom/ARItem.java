@@ -9,6 +9,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.entity.custom.BulletProjectileEntity;
+import net.oreotroll.tutorialmod.entity.custom.ParticleProjectileEntity;
 import net.oreotroll.tutorialmod.item.ModItems;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
@@ -42,9 +43,15 @@ public class ARItem extends Item {
 
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
                         ModSounds.SOUND_BULLET_SHOOT, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+
+                ParticleProjectileEntity particleProjectileEntity = new ParticleProjectileEntity(user, world);
+                particleProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 4.3F, 0.0F);
+                world.spawnEntity(particleProjectileEntity);
+
                 BulletProjectileEntity bulletProjectileEntity = new BulletProjectileEntity(user, world);
                 bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 40.5F, 0.0F);
                 world.spawnEntity(bulletProjectileEntity);
+
             }else {
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
                         ModSounds.SOUND_GUN_DRY_FIRE, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
