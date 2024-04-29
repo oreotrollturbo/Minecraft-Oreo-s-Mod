@@ -10,7 +10,7 @@ public class PorcupineAttackGoal extends MeleeAttackGoal {
     private final PorcupineEntity entity;
     private int attackDelay = 20;
     private int ticksUntilNextAttack = 20;
-    private boolean shouldCountTillNextAttack = false;
+    private boolean shouldCountTillNextAttack = false; //The porcupine is not messing around anymore
 
     public PorcupineAttackGoal(PathAwareEntity mob, double speed, boolean pauseWhenMobIdle) {
         super(mob, speed, pauseWhenMobIdle);
@@ -63,7 +63,7 @@ public class PorcupineAttackGoal extends MeleeAttackGoal {
 
     protected void performAttack(LivingEntity pEnemy) {
         this.resetAttackCooldown();
-        this.mob.swingHand(Hand.MAIN_HAND);
+        this.mob.swingHand(Hand.MAIN_HAND); //The porcupine has hands confirmed ????
         this.mob.tryAttack(pEnemy);
     }
 

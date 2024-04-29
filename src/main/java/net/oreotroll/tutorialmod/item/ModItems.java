@@ -12,7 +12,7 @@ import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.item.custom.*;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
-public class ModItems {
+public class ModItems { //Big brother is always watching
 
     public  static  final Item RAW_KEN = registerItem("raw_ken", new Item(new FabricItemSettings())); //Officially adds the item
     public  static  final Item UNI = registerItem("uni", new Item(new FabricItemSettings()));
@@ -117,5 +117,5 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToIngerdientItemGroup);
     }
-
+// Ken is life Ken is love Ken is happiness
 }

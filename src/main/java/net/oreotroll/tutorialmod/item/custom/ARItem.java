@@ -22,6 +22,7 @@ public class ARItem extends Item {
     }
 
     public boolean hasBullet(PlayerEntity playerEntity, ItemStack stack){
+        //The naming of this gun across the code is about as consistent as my sleep schedule
 
         if (stack.isOf(ModItems.BULLET)){
             playerEntity.getInventory().removeOne(stack);
@@ -64,6 +65,7 @@ public class ARItem extends Item {
 
         return super.use(world, user, hand);
     }
+    //The shadown creatures are comming
 
 
 }

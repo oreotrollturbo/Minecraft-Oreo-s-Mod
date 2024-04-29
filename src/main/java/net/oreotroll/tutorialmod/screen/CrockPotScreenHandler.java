@@ -38,7 +38,7 @@ public class CrockPotScreenHandler extends ScreenHandler {
         this.blockEntity = ((CrockPotBlockEntity) blockEntity);
 
         this.addSlot(new Slot(inventory, 0, 80 ,11));
-        this.addSlot(new Slot(inventory, 1, 80 ,59));
+        this.addSlot(new Slot(inventory, 1, 80 ,59)); //Why does everything have to look like HTML code
 
 
         addPlayerInventory(playerInventory);
@@ -89,7 +89,7 @@ public class CrockPotScreenHandler extends ScreenHandler {
         return this.inventory.canPlayerUse(player);
     }
 
-    private void addPlayerInventory(PlayerInventory playerInventory){
+    private void addPlayerInventory(PlayerInventory playerInventory){ //Theese are some complicated math shenanigans
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l){
                 this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));

@@ -15,7 +15,7 @@ import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> KEN_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
+    public static final RegistryKey<PlacedFeature> KEN_ORE_PLACED_KEY = registerKey("ruby_ore_placed"); //This should be "ken ore placed" but the program works so I'm not gonna touch it
 
 
     public static void boostrap(Registerable<PlacedFeature> context) {
@@ -35,4 +35,5 @@ public class ModPlacedFeatures {
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }
-}
+}//When will that be?
+//Say the bells of Stepney.

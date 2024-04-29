@@ -31,14 +31,17 @@ public class ModConfiguredFeatures {
 
         register(context, KEN_ORE_KEY , Feature.ORE, new OreFeatureConfig(overworldKenOres, 3));
 
-    }
+    } // I once spent 5 hours looking for a mistake in my code and it ended up being a stupid misspelled file name
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TutorialMod.MOD_ID, name));
-    }
+    }//tutrialmods
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
                                                                                    RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }
+
+//When will you pay me?
+//Say the bells at Old Bailey.

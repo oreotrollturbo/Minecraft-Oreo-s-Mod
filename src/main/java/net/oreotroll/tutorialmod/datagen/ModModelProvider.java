@@ -16,7 +16,7 @@ import java.util.Optional;
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
-    }
+    } //To be fair most of datagen is boring because all it does is automate tedious work
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -43,7 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.KEN_DOOR);//theese are simply added
         blockStateModelGenerator.registerTrapdoor(ModBlocks.KEN_TRAPDOOR);
 
-        blockStateModelGenerator.registerSimpleState(ModBlocks.CROCK_POT);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.CROCK_POT); // The crock put is a Dont Starve refference
 
 
 

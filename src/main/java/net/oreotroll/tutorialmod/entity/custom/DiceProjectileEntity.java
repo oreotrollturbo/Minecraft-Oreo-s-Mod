@@ -21,7 +21,7 @@ public class DiceProjectileEntity extends ThrownItemEntity {
         super(entityType, world);
     }
 
-    public DiceProjectileEntity(LivingEntity livingEntity, World world) {
+    public DiceProjectileEntity(LivingEntity livingEntity, World world) { //Yeah all of this is copied from kaupejoes tutorial
         super(ModEntities.DICE_PROJECTILE,livingEntity, world);
     }
 
@@ -40,7 +40,7 @@ public class DiceProjectileEntity extends ThrownItemEntity {
         if (!this.getWorld().isClient()){
             this.getWorld().sendEntityStatus(this,(byte)3);
             this.getWorld().setBlockState(getBlockPos(), ((DiceBlock) ModBlocks.DICE_BLOCK).getRandomBlockState(), 3);
-        }
+        } // Its code that helped me make everything I have made though
 
         this.discard();
         super.onBlockHit(blockHitresult); //onBlockHit(BlockHitResult)

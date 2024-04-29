@@ -14,7 +14,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
+        super(output, registriesFuture); // Datagen has saved so much time
     }
 
     @Override
@@ -72,4 +72,4 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
     }
-}
+} //If god is real he is the one that made datagen

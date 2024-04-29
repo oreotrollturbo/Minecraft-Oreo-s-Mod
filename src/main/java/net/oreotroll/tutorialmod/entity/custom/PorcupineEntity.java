@@ -37,7 +37,7 @@ public class PorcupineEntity extends AnimalEntity {
             DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
     public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
+    private int idleAnimationTimeout = 0;  // All of this is animation stuff not much to say about this
 
     public final AnimationState attackingAnimationState = new AnimationState();
     public int attackAnimationTimeout = 0;
@@ -154,4 +154,4 @@ public class PorcupineEntity extends AnimalEntity {
     protected SoundEvent getDeathSound() {
     return SoundEvents.ENTITY_GOAT_DEATH;
     }
-}
+}  // some day i will make a ken mob . Mark my words

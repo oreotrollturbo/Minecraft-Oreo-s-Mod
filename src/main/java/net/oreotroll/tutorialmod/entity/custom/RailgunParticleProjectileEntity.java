@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 
 public class RailgunParticleProjectileEntity extends ThrownItemEntity {
+    //Literally ALL of this code was written at 3am
 
     public boolean isRailgun;
 
@@ -58,7 +59,7 @@ public class RailgunParticleProjectileEntity extends ThrownItemEntity {
     protected int waterTickCounter = 0;
 
     @Override
-    public void tick() {
+    public void tick() { // JUST PLEASE WORK I WANNA SLEEP
         if (this.getWorld().isClient) {
 
             if (isTouchingWater()){

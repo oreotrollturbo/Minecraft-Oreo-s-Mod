@@ -15,10 +15,10 @@ public class PorcupineModel<T extends PorcupineEntity> extends SinglePartEntityM
 	private final ModelPart porcupine;
 	private final ModelPart head;
 
-	public PorcupineModel(ModelPart root)
+	public PorcupineModel(ModelPart root) //This is also from blockbench
 	{
 		this.porcupine = root.getChild("porcupine");
-		this.head = porcupine.getChild("body").getChild("torso").getChild("head");
+		this.head = porcupine.getChild("body").getChild("torso").getChild("head"); // Me when the head is a child (please laugh)
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();

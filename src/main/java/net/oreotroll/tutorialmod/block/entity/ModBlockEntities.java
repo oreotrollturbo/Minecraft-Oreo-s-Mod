@@ -12,12 +12,12 @@ public class ModBlockEntities {
     public static final BlockEntityType<CrockPotBlockEntity> CROCK_POT_BLOCK_ENTITY =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(TutorialMod.MOD_ID,"crock_pot"),
                     FabricBlockEntityTypeBuilder.create(CrockPotBlockEntity::new ,
-                            ModBlocks.CROCK_POT).build());
+                            ModBlocks.CROCK_POT).build()); //simply registers the block entity
 
 
 
     public static void registerBlockEntities(){
-        TutorialMod.LOGGER.info("Registering Custom Blocks for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering Custom Blocks for " + TutorialMod.MOD_ID); //I have nothing to say about this one
     }
 
 }

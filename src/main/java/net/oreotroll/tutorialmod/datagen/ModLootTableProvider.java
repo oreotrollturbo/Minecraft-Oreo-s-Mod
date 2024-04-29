@@ -23,7 +23,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
-    }
+    } //loot tables are so vital yet so boring
 
     @Override
     public void generate() {
@@ -53,11 +53,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.KEN_SLAB, slabDrops(ModBlocks.KEN_SLAB));
 
 
-
-
         addDrop(ModBlocks.KEN_ORE, copperLikeOreDrops(ModBlocks.KEN_ORE, ModItems.RAW_KEN));
         addDrop(ModBlocks.KEN_ORE, copperLikeOreDrops(ModBlocks.KEN_ORE, ModItems.RAW_KEN));//This one steals from the copied coper ore code
-
 
 
         addDrop(ModBlocks.DICE_BLOCK, drops(ModItems.DICE));

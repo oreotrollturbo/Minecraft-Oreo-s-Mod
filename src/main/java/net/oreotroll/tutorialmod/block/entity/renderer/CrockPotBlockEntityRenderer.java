@@ -24,7 +24,7 @@ public class CrockPotBlockEntityRenderer implements BlockEntityRenderer<CrockPot
 
 
     @Override
-    public void render(CrockPotBlockEntity entity, float tickDelta, MatrixStack matrices,
+    public void render(CrockPotBlockEntity entity, float tickDelta, MatrixStack matrices, //This part is some magic shenanigan I don't understand
                        VertexConsumerProvider vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
         ItemStack stack = entity.getRenderStack();

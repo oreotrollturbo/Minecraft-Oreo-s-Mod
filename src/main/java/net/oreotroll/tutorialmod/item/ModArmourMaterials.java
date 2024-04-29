@@ -15,7 +15,7 @@ public enum ModArmourMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4,0.5f, ()-> Ingredient.ofItems(ModItems.KEN_INGOT));
 
 
-    private final String name;
+    private final String name; //nothing to say here
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
     private final int enchantability;

@@ -16,7 +16,7 @@ import net.oreotroll.tutorialmod.sound.ModSounds;
 public class BulletItem extends Item {
     public BulletItem(Settings settings) {
         super(settings);
-    }
+    } //all of the code bellow was from when you could manually throw bullets
 
 
     //@Override

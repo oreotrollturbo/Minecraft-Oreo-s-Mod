@@ -24,11 +24,11 @@ public class PorcupineRenderer extends MobEntityRenderer<PorcupineEntity, Porcup
     public void render(PorcupineEntity mobEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
 
-        if (mobEntity.isBaby()){
-            matrixStack.scale(0.2f,0.2f,0.2f); //maybe too small lmao
+        if (mobEntity.isBaby()){ //I made the baby tiny becaue I thought it would be funny
+            matrixStack.scale(0.2f,0.2f,0.2f);
         }
         else {
-            matrixStack.scale(1f,1f,1f); //maybe too small lmao
+            matrixStack.scale(1f,1f,1f);  // The urge to make the models huge was insane but I resisted
         }
 
 

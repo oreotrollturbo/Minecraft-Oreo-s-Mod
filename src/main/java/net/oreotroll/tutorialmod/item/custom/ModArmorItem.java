@@ -33,7 +33,7 @@ public class ModArmorItem extends ArmorItem {
         if (!world.isClient()) {
             if (entity instanceof PlayerEntity player && hasFullSuitOfArmorOn(player)) {
                 evaluateArmorEffects(player);
-            }
+            }//Full armour used to give you more health but there some complications
         }
 
         super.inventoryTick(stack, world, entity, slot, selected);
@@ -59,9 +59,7 @@ public class ModArmorItem extends ArmorItem {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
-        } //else {
-            //player.removeStatusEffect(new Status(mapStatusEffect));
-        //}
+        }
     }
 
 
@@ -91,7 +89,7 @@ public class ModArmorItem extends ArmorItem {
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
-}
+}// Ken armour looks bad as hell but I cant bother to fic it
 
 
 

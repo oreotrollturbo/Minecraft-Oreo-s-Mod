@@ -9,6 +9,7 @@ public enum ModToolMaterial implements ToolMaterial {
     KEN_INGOT(5,2500,2f,22f,26,
             ()->Ingredient.ofItems(ModItems.KEN_INGOT));
 
+    //Ocenia is at war with Eurasia Ocenia has ALWAYS been at war with Eurasia
 
     private final int miningLevel;
     private final int itemDurability;

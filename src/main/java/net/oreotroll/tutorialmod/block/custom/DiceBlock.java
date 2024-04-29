@@ -9,7 +9,7 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 
-public class DiceBlock extends Block {
+public class DiceBlock extends Block { //The gambling addiction is crazy
     public static DirectionProperty FACING = DirectionProperty.of("number",
             Direction.UP,
             Direction.NORTH,
@@ -41,7 +41,7 @@ public class DiceBlock extends Block {
         builder.add(FACING);
     }
 
-    private Direction getRandomDirection() {
+    private Direction getRandomDirection() { //Simply gets a random direction
         Direction[] dirs = new Direction[] {
                 Direction.UP,
                 Direction.NORTH,
@@ -51,6 +51,6 @@ public class DiceBlock extends Block {
                 Direction.DOWN
         };
 
-        return dirs[Random.create().nextBetween(0, dirs.length-1)];
+        return dirs[Random.create().nextBetween(0, dirs.length-1)]; // Are you feeling lucky ?
     }
 }

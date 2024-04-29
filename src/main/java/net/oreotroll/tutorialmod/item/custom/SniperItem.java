@@ -11,7 +11,7 @@ import net.oreotroll.tutorialmod.entity.custom.BulletProjectileEntity;
 import net.oreotroll.tutorialmod.item.ModItems;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
-public class SniperItem extends Item {
+public class SniperItem extends Item { // Professionals have standards
     public SniperItem(Settings settings) {
         super(settings);
     }
@@ -19,7 +19,7 @@ public class SniperItem extends Item {
     public boolean hasBullet(PlayerEntity playerEntity, ItemStack stack){
 
         if (stack.isOf(ModItems.BULLET)){
-            playerEntity.getInventory().removeOne(stack);
+            playerEntity.getInventory().removeOne(stack); //Be polite
             return true;
         }else {
             return false;
@@ -31,7 +31,7 @@ public class SniperItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
         ItemStack itemStack = user.getOffHandStack();
-        user.getItemCooldownManager().set(this, 50);
+        user.getItemCooldownManager().set(this, 50); //Be efficient
 
         if (!world.isClient) {
 
@@ -49,7 +49,7 @@ public class SniperItem extends Item {
             }
 
         }
-        if (!user.getAbilities().creativeMode) {
+        if (!user.getAbilities().creativeMode) { // Have a plan to kill anyone you meet
             itemStack.decrement(1);
         }
 
@@ -57,4 +57,4 @@ public class SniperItem extends Item {
     }
 
 
-}
+}// Dad I'm not a crazed gunman dad I'm an assassin . What the difference be ? The one is a job and the other's mental sickness

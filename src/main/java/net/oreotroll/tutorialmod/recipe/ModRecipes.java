@@ -11,8 +11,6 @@ public class ModRecipes {
                 CrockPotRecipe.Serializer.INSTANCE);
         Registry.register(Registries.RECIPE_TYPE, new Identifier(TutorialMod.MOD_ID, CrockPotRecipe.Type.ID),
                 CrockPotRecipe.Type.INSTANCE);
-    }
-
-
-
+    }//This is lame
+    //Its just registering stuff
 }

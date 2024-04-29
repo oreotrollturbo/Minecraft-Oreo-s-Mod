@@ -16,7 +16,7 @@ import net.oreotroll.tutorialmod.block.custom.DiceBlock;
 import net.oreotroll.tutorialmod.block.custom.SoundBlock;
 import net.oreotroll.tutorialmod.sound.ModSounds;
 
-public class ModBlocks {
+public class ModBlocks { // My collection of wonderfully cursed blocks
 
     public static final Block KEN_ORE = registerBlock("ken_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE), UniformIntProvider.create(5, 10)));
@@ -24,8 +24,8 @@ public class ModBlocks {
     public static final Block KEN_BLOCK = registerBlock("ken_block",
         new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK))); //adds the actuall block
 
-    public static final Block NYX_BLOCK = registerBlock("nyx_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK))); //adds the actuall block
+    public static final Block NYX_BLOCK = registerBlock("nyx_block", //This block is also a workstation block :)
+            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
     public static final Block DEATH__BLOCK = registerBlock("death__block",
             new Block(FabricBlockSettings.copyOf(Blocks.ANVIL)));
@@ -94,7 +94,5 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
         TutorialMod.LOGGER.info("Registering ModBlocks for " + TutorialMod.MOD_ID);//just for the funni
-
-
     }
 }

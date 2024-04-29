@@ -19,12 +19,13 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.custom.DiceBlock;
+import net.oreotroll.tutorialmod.datagen.ModDamageTypes;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.item.ModItems;
 
-public class BulletProjectileEntity extends ThrownItemEntity {
+public class BulletProjectileEntity extends ThrownItemEntity { // This was the first class I made entirely on my own
 
-    public int bulletDamage = 30; //the damage of the bullet 30 by default
+    public int bulletDamage = 10; //the damage of the bullet 30 by default
 
 
     public BulletProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -49,9 +50,8 @@ public class BulletProjectileEntity extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), (float)bulletDamage);
+        entity.damage(ModDamageTypes.of(getWorld(),ModDamageTypes.CUSTOM_DAMAGE_TYPE), (float)bulletDamage);
     }
-
 
     @Override
     protected void onCollision(HitResult hitResult) {
@@ -61,6 +61,6 @@ public class BulletProjectileEntity extends ThrownItemEntity {
             this.getWorld().sendEntityStatus(this, (byte) 3);
             this.discard();
         }
-    }
+    } // I am very proud of this one
 
 }

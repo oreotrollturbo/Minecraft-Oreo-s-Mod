@@ -7,7 +7,7 @@ import net.minecraft.client.render.entity.animation.Transformation;
 
 public class ModModelAnimations {
     public static final Animation PORCUPINE_WALK = Animation.Builder.create(2.5f).looping()
-            .addBoneAnimation("torso",
+            .addBoneAnimation("torso", //all of this is from blockbench and its a mess
                     new Transformation(Transformation.Targets.TRANSLATE,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
@@ -460,4 +460,4 @@ public class ModModelAnimations {
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(5f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
-}
+}// Why did you scroll all the way here ?

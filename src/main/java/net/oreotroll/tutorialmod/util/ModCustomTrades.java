@@ -18,7 +18,7 @@ public class ModCustomTrades {
     public static void registerCustomTrades() {
 
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 5,
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 5, //Farmers are now canonically drunk
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 2),
@@ -36,8 +36,8 @@ public class ModCustomTrades {
                 });
         TradeOfferHelper.registerWanderingTraderOffers(2,
                 factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 2),
+                    factories.add((entity, random) -> new TradeOffer( //The ken staff will have a use soon so ill make this more expensive
+                            new ItemStack(Items.EMERALD, 64),
                             new ItemStack(ModItems.KEN_STAFF, 1),
                             2, 30, 0.5f
                     ));
@@ -45,7 +45,7 @@ public class ModCustomTrades {
 
 
 
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.VILLAGERTROLLTURBO, 1,
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.VILLAGERTROLLTURBO, 1, // LOOK MOM IM IN A MINCREAFT MOD
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(ModItems.KEN_INGOT, 5),

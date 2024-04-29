@@ -33,10 +33,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY); //giving it inventory space
 
     private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 1; //more slots later
+    private static final int OUTPUT_SLOT = 1; //more slots later maybe
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -58,7 +58,7 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
             public void set(int index, int value) {
                 switch (index){
                     case 0 -> CrockPotBlockEntity.this.progress = value;
-                    case 1 -> CrockPotBlockEntity.this.maxProgress = value;
+                    case 1 -> CrockPotBlockEntity.this.maxProgress = value; //"It's almost done!" -Willson
                 }
             }
 
@@ -70,7 +70,7 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     @Override
-    public void markDirty() {
+    public void markDirty() { //I dont know why the mark is dirty but someone should clean it
         world.updateListeners(pos, getCachedState(),getCachedState(), 3);
         super.markDirty();
     }
@@ -110,7 +110,7 @@ public class CrockPotBlockEntity extends BlockEntity implements ExtendedScreenHa
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("crock_pot.progress");
+        progress = nbt.getInt("crock_pot.progress"); //fun fact: this was my first time doing stuff with nbt data
     }
 
     @Nullable

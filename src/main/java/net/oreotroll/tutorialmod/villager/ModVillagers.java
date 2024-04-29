@@ -16,7 +16,7 @@ import net.oreotroll.tutorialmod.block.ModBlocks;
 
 import java.security.PublicKey;
 
-public class ModVillagers {
+public class ModVillagers { // My narcicistic ass had to add myself one way or another
 
     public static final  RegistryKey<PointOfInterestType> SOUND_POI_KEY = poiKey("soundpoi");
     public static final PointOfInterestType SOUND_POI = registerPoi("soundpoi", ModBlocks.NYX_BLOCK);
@@ -29,7 +29,7 @@ public class ModVillagers {
                 new VillagerProfession(name, entry -> entry.matchesKey(type), entry -> entry.matchesKey(type),
                         ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER));
 
-    }
+    }// The shadow creatures are getting closer
 
     private static PointOfInterestType registerPoi(String name, Block block){
         return PointOfInterestHelper.register(new Identifier(TutorialMod.MOD_ID, name),1,1,block);
@@ -46,3 +46,6 @@ public class ModVillagers {
 
     }
 }
+
+//You owe me five farthings,
+//Say the bells of St. Martin's.

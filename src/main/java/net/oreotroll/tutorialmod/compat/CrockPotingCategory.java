@@ -18,7 +18,7 @@ import net.oreotroll.tutorialmod.block.ModBlocks;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CrockPotingCategory implements DisplayCategory<BasicDisplay> {
+public class CrockPotingCategory implements DisplayCategory<BasicDisplay> { //This is the part that adds functionality to the crock pot
     public static final Identifier TEXTURE =
             new Identifier(TutorialMod.MOD_ID, "textures/gui/crock_pot_gui.png");
 
@@ -58,5 +58,5 @@ public class CrockPotingCategory implements DisplayCategory<BasicDisplay> {
     @Override
     public int getDisplayHeight() {
         return 90;
-    }
+    } // I genuinely have no clue what this is and what it does
 }

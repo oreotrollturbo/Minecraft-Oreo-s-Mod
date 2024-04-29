@@ -13,7 +13,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 
-public class ParticleProjectileEntity extends ThrownItemEntity {
+public class ParticleProjectileEntity extends ThrownItemEntity { //The amount of hours I've spent on this class is depressing
 
     public boolean isRailgun;
 
@@ -37,7 +37,7 @@ public class ParticleProjectileEntity extends ThrownItemEntity {
    }
 
     @Override
-    public Packet<ClientPlayPacketListener> createSpawnPacket() {
+    public Packet<ClientPlayPacketListener> createSpawnPacket() { // Most of this code was written at 2-4am so its probably ass
         return new EntitySpawnS2CPacket(this);
     }
 
@@ -65,7 +65,7 @@ public class ParticleProjectileEntity extends ThrownItemEntity {
         }
         tickCounter++;
         super.tick();
-    }
+    } // no matter how ass these solutions are at least they work so im keeping them
 
 
 

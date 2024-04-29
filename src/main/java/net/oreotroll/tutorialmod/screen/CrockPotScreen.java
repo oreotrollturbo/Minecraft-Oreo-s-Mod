@@ -17,6 +17,7 @@ public class CrockPotScreen extends HandledScreen<CrockPotScreenHandler> {
         super(handler, inventory, title);
     }
 
+    //This gives me PTSD from the time we had to do HTML in school
 
     @Override
     protected void init() {
@@ -51,4 +52,4 @@ public class CrockPotScreen extends HandledScreen<CrockPotScreenHandler> {
         super.render(context, mouseX, mouseY, delta);
         drawMouseoverTooltip(context,mouseX,mouseY);
     }
-}
+}// I fucking hate HTML

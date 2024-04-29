@@ -11,11 +11,11 @@ import java.util.concurrent.CompletableFuture;
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
-        super(output, completableFuture);
+        super(output, completableFuture); //Item tags are a very niche thing
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup arg) {
+    protected void configure(RegistryWrapper.WrapperLookup arg) { //I had forgotten this exists ngl
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.KEN_HELMET,ModItems.KEN_CHESTPLATE,ModItems.KEN_LEGGINGS,ModItems.KEN_BOOTS);
 

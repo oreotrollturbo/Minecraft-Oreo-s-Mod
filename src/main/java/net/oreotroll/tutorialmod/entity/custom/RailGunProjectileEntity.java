@@ -29,7 +29,7 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return Items.AIR; //return ModItems.BULLET;
+        return Items.AIR;
    }
 
     @Override
@@ -46,7 +46,7 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
 
 
     @Override
-    protected void onCollision(HitResult hitResult) {
+    protected void onCollision(HitResult hitResult) { //The sleep deprivation is getting into my head
         super.onCollision(hitResult);
         super.onCollision(hitResult);
         if (!this.getWorld().isClient) {
@@ -59,7 +59,7 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
     @Override
     public void tick() {
 
-        if (this.getWorld().isClient){
+        if (this.getWorld().isClient){ //This projectile is hydrophobic . why? Well because I said so
             if (isTouchingWater()){
                 if (waterTickCounter >= 5){//kills the projectile after one fourth of a second in water
                     discard();

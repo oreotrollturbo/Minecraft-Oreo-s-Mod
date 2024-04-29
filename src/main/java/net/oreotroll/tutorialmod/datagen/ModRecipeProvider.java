@@ -231,7 +231,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createFenceGateRecipe(ModBlocks.KEN_FENCE_GATE, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
         createStairsRecipe(ModBlocks.KEN_STAIRS, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
 
-
+// There are so many recipes jesus christ
 
     }
 }

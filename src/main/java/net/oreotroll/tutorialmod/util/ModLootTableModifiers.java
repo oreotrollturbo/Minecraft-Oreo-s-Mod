@@ -116,20 +116,7 @@ public class ModLootTableModifiers {
 
 
         });
-
-        //LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) ->{ //Sus sand needs to be modified a diff way
-
-            //if (SUSPICIOUS_SAND_ID.equals(id)){
-                //List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries)); //Keeps the entries that exist
-                //entries.add(ItemEntry.builder(ModItems.RAW_KEN).build());
-                //entries.add(ItemEntry.builder(ModItems.KEN_STAFF).build());
-
-                //LootPool.Builder pool = LootPool.builder().with(entries);
-                //return LootTable.builder().pool(pool).build();
-            //}
-
-            //return null;
-        //});
-
     }
 }
+
+//We shall meet in the place where there is no darkness

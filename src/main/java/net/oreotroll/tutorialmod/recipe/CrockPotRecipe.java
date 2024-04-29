@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CrockPotRecipe  implements Recipe<SimpleInventory> {
+public class CrockPotRecipe  implements Recipe<SimpleInventory> { //Charcoal Twigs and Refined stone
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
@@ -93,7 +93,7 @@ public class CrockPotRecipe  implements Recipe<SimpleInventory> {
         @Override
         public Codec<CrockPotRecipe> codec() {
             return CODEC;
-        }
+        } // I used to think pierogi was spelled pieroghi
 
         @Override
         public CrockPotRecipe read(PacketByteBuf buf) {

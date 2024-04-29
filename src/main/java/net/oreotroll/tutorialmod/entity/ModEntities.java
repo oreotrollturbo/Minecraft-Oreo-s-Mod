@@ -43,6 +43,8 @@ public class ModEntities {
             FabricEntityTypeBuilder.<RailgunParticleProjectileEntity>create(SpawnGroup.MISC,RailgunParticleProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
 
+    //I'm starting to see shadowy figures appear in the corner of my eye
+
 
 
 }

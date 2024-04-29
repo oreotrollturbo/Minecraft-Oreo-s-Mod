@@ -20,12 +20,12 @@ import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class CrockPotBlock extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,12,16);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,12,16); //setting the hitbox
 
 
     public CrockPotBlock(Settings settings) {
         super(settings);
-    }
+    }// It makes me hungry just to look at it -Willson
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -66,7 +66,7 @@ public class CrockPotBlock extends BlockWithEntity implements BlockEntityProvide
             }
         }
 
-        return ActionResult.SUCCESS;
+        return ActionResult.SUCCESS; // Mmmmm! It's ready to eat! -Willson
     }
 
     @Nullable

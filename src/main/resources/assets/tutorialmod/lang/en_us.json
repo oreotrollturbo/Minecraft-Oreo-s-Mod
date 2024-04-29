@@ -78,6 +78,9 @@
 
   "metal_detector_found_ore":"Metal Detector Jingle",
 
+"death.attack.gun": "%1$s was shot!",
+
+
 
   "itemgroup.mymod": "Oreo's Mod items"
 

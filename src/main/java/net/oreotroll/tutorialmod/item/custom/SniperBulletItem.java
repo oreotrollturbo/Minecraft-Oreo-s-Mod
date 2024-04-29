@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 public class SniperBulletItem extends Item {
     public SniperBulletItem(Settings settings) {
         super(settings);
-    }
+    } //This is just like the bullet item
 
 
     //@Override

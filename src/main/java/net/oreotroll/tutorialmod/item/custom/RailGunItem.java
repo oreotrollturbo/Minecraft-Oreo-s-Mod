@@ -10,7 +10,6 @@ import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.oreotroll.tutorialmod.entity.custom.ParticleProjectileEntity;
 import net.oreotroll.tutorialmod.entity.custom.RailGunProjectileEntity;
 import net.oreotroll.tutorialmod.entity.custom.RailgunParticleProjectileEntity;
 import net.oreotroll.tutorialmod.sound.ModSounds;
@@ -18,7 +17,7 @@ import net.oreotroll.tutorialmod.sound.ModSounds;
 public class RailGunItem extends Item {
 
     public int getMaxUseTime(ItemStack stack) {
-        return 55;}
+        return 55;}// sets how long the charge is
 
     public RailGunItem(Settings settings) {
         super(settings);
@@ -27,20 +26,20 @@ public class RailGunItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
-        //user.getItemCooldownManager().set(this, 120);
+
 
 
         user.playSound(ModSounds.SOUND_RAIL_GUN_WINDUP, 1.7F, 1.0F);
         user.incrementStat(Stats.USED.getOrCreateStat(this));
 
         return ItemUsage.consumeHeldItem(world, user, hand);
-        //return TypedActionResult.success();
+
 
     }
 
 
     @Override
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) { // I am really REALLY proud of this item
         this.playStopUsingSound(user);
 
 
@@ -68,6 +67,7 @@ public class RailGunItem extends Item {
 
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
+        // All of this code is a product of my "intelligence"
 
         if (user instanceof PlayerEntity playerEntity) {
             ((PlayerEntity) user).getItemCooldownManager().set(this, 20);
@@ -80,3 +80,6 @@ public class RailGunItem extends Item {
         user.playSound(ModSounds.SOUND_RAIL_GUN_WINDOWN, 1.0F, 1.0F);
     }
 }
+// sometimes it feels like im a genius and some other times like im the dumbest man alive
+
+//one is a delusion and the other is reality

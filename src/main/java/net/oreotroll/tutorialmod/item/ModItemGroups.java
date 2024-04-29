@@ -12,7 +12,7 @@ import net.oreotroll.tutorialmod.block.ModBlocks;
 public class ModItemGroups {
 
     public static final ItemGroup MY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(TutorialMod.MOD_ID, "oreosmod"),
+            new Identifier(TutorialMod.MOD_ID, "oreosmod"), //oreosmod is such a bad name but fuck it we ball
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mymod"))
                     .icon(() -> new ItemStack(ModItems.RAW_KEN)).entries((displayContext, entries) -> { //when minecraft starts
 

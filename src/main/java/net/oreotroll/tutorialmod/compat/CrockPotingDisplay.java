@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CrockPotingDisplay extends BasicDisplay {
+public class CrockPotingDisplay extends BasicDisplay { // This one manages the crock put display
     public CrockPotingDisplay(List<EntryIngredient> inputs, List<EntryIngredient> outputs) {
         super(inputs, outputs);
     }
@@ -31,5 +31,5 @@ public class CrockPotingDisplay extends BasicDisplay {
     @Override
     public CategoryIdentifier<?> getCategoryIdentifier() {
         return CrockPotingCategory.CROCK_POTING;
-    }
+    } //Crock potting was THE dumbest name I could have come up with
 }

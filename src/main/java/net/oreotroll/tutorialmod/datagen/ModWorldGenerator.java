@@ -15,11 +15,11 @@ public class ModWorldGenerator extends FabricDynamicRegistryProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
-        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE)); //THIS IS WHERE WE ADD THE KEN ORE YEAHHHHHHHHH BABYYYYYYY
     }
 
     @Override
     public String getName() {
         return "World Gen";
-    }
+    } // This line is so fucking dumb
 }

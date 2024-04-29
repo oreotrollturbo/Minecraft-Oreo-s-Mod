@@ -10,7 +10,7 @@ import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.recipe.CrockPotRecipe;
 import net.oreotroll.tutorialmod.screen.CrockPotScreen;
 
-public class TutorialModREIClientPlugin implements REIClientPlugin {
+public class TutorialModREIClientPlugin implements REIClientPlugin { // I love the REI mod
     @Override
     public void registerCategories(CategoryRegistry registry) {
         registry.add(new CrockPotingCategory());
@@ -28,5 +28,5 @@ public class TutorialModREIClientPlugin implements REIClientPlugin {
     public void registerScreens(ScreenRegistry registry) {
         registry.registerClickArea(screen -> new Rectangle(75, 30, 20, 30), CrockPotScreen.class,
                 CrockPotingCategory.CROCK_POTING);
-    }
+    } // I still hate the name "crock poting"
 }

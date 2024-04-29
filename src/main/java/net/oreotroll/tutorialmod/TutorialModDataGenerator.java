@@ -27,4 +27,4 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
 	}
-}
+}// And here comes a chopper to chop off your head!

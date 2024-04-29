@@ -170,6 +170,6 @@ public class MetalDetectorItem extends Item {
         tooltip.add(Text.translatable("tooltip.tutorialmod.metal_detector.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
-}
+}//The writing of this code officially marked my fall into insanity
 
 
