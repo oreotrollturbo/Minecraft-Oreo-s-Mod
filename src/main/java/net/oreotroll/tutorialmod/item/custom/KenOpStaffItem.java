@@ -1,7 +1,5 @@
 package net.oreotroll.tutorialmod.item.custom;
 
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -11,8 +9,8 @@ import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.entity.custom.BallOfFireEntity;
 
 
-public class KenStaffItem extends Item {
-    public KenStaffItem(Settings settings) {
+public class KenOpStaffItem extends Item {
+    public KenOpStaffItem(Settings settings) {
         super(settings);
     }
 
@@ -21,8 +19,6 @@ public class KenStaffItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-
-        user.getItemCooldownManager().set(this, 40);
 
         if (!world.isClient) {
 

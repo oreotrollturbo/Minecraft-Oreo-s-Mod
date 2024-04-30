@@ -19,6 +19,7 @@ public class ModItems { //Big brother is always watching
     public  static  final Item NYX = registerItem("nyx", new Item(new FabricItemSettings()));
     public  static  final Item DEATH_ = registerItem("death_", new Item(new FabricItemSettings()));
     public  static  final Item KEN_INGOT = registerItem("ken_ingot", new Item(new FabricItemSettings()));
+    public  static  final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
 
     public  static  final Item JETPACK_HELLRIDE_MUSIC_DISC = registerItem("jetpack_hellride_music_disc", //EPIC MUSIC DISK YIPEEE
             new MusicDiscItem(7, ModSounds.JETPACK_HELLRIDE,new  FabricItemSettings().maxCount(1),155));
@@ -34,6 +35,9 @@ public class ModItems { //Big brother is always watching
 
     public  static  final Item KEN_STAFF = registerItem("ken_staff",
             new KenStaffItem(new FabricItemSettings().maxCount(1)));
+
+    public  static  final Item KEN_OP_STAFF = registerItem("ken_op_staff",
+            new KenOpStaffItem(new FabricItemSettings().maxCount(1)));
 
 
     public  static  final Item KEN_PICKAXE = registerItem("ken_pickaxe",

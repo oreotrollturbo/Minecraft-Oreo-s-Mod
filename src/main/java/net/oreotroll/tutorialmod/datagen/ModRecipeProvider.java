@@ -2,6 +2,7 @@ package net.oreotroll.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -221,7 +222,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAIL_GUN)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.KEN_STAFF,1)
+                .pattern(" S ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('I', ModItems.KEN_INGOT)
+                .input('S', ModItems.RUBY)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_STAFF)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.RUBY,1)
+                .pattern("NNN")
+                .pattern("PDP")
+                .pattern("NNN")
+                .input('D', Items.DIAMOND)
+                .input('P', Items.PRISMARINE_SHARD)
+                .input('N', Blocks.NETHERRACK)
+                .criterion(hasItem(Items.DIAMOND),conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.KEN_OP_STAFF,1)
+                .pattern("KKK")
+                .pattern("KSK")
+                .pattern("KKK")
+                .input('S', ModItems.KEN_STAFF)
+                .input('K', ModBlocks.KEN_BLOCK)
+                .criterion(hasItem(Blocks.BEDROCK),conditionsFromItem(Blocks.BEDROCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_OP_STAFF)));
 
 
 

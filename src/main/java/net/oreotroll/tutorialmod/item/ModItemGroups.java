@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DEATH_);
                         entries.add(ModItems.RAW_KEN);
                         entries.add(ModItems.KEN_INGOT);
+                        entries.add(ModItems.RUBY);
 
                         entries.add(ModItems.VODKA);
                         entries.add(ModItems.PIEROGI);
@@ -59,6 +60,7 @@ public class ModItemGroups {
 
 
                         entries.add(ModItems.KEN_STAFF);
+                        entries.add(ModItems.KEN_OP_STAFF);
                         entries.add(ModItems.KEN_SHOVEL);
                         entries.add(ModItems.KEN_HOE);
                         entries.add(ModItems.KEN_PICKAXE);

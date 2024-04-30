@@ -34,15 +34,6 @@ public class ModCustomTrades {
                             6, 40, 0.05f
                     ));
                 });
-        TradeOfferHelper.registerWanderingTraderOffers(2,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer( //The ken staff will have a use soon so ill make this more expensive
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.KEN_STAFF, 1),
-                            2, 30, 0.5f
-                    ));
-                });
-
 
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.VILLAGERTROLLTURBO, 1, // LOOK MOM IM IN A MINCREAFT MOD

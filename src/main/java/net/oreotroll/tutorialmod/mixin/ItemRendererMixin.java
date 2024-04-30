@@ -20,6 +20,9 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.KEN_STAFF) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(TutorialMod.MOD_ID, "ken_staff_3d", "inventory"));
         }
+        if (stack.isOf(ModItems.KEN_OP_STAFF) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(TutorialMod.MOD_ID, "ken_op_staff_3d", "inventory"));
+        }
         return value;
     }
 }
