@@ -43,6 +43,11 @@ public class ModEntities {
             FabricEntityTypeBuilder.<RailgunParticleProjectileEntity>create(SpawnGroup.MISC,RailgunParticleProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.1f, 0.1f)).build());
 
+    public static final EntityType<BallOfFireEntity> BALL_OF_FIRE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TutorialMod.MOD_ID, "ball_of_fire"),
+            FabricEntityTypeBuilder.<BallOfFireEntity>create(SpawnGroup.MISC,BallOfFireEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.4f, 0.4f)).build());
+
     //I'm starting to see shadowy figures appear in the corner of my eye
 
 

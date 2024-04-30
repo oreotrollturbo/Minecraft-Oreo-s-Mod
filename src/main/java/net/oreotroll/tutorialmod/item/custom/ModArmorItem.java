@@ -19,7 +19,7 @@ public class ModArmorItem extends ArmorItem {
 
     public static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.RESISTANCE,  10, 2
+                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.RESISTANCE,  10, 1
                     ,false,false,true)).build();
 
 

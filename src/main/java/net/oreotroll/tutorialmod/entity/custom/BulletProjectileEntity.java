@@ -53,6 +53,8 @@ public class BulletProjectileEntity extends ThrownItemEntity { // This was the f
         entity.damage(ModDamageTypes.of(getWorld(),ModDamageTypes.CUSTOM_DAMAGE_TYPE), (float)bulletDamage);
     }
 
+    private int tickCounter = 0;
+
     @Override
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
@@ -61,6 +63,16 @@ public class BulletProjectileEntity extends ThrownItemEntity { // This was the f
             this.getWorld().sendEntityStatus(this, (byte) 3);
             this.discard();
         }
+        tickCounter++;
     } // I am very proud of this one
 
+    @Override
+    public void tick() {
+
+        if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+            discard();
+        }
+
+        super.tick();
+    }
 }

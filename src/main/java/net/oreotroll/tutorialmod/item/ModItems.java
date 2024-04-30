@@ -33,7 +33,7 @@ public class ModItems { //Big brother is always watching
             new MetalDetectorItem(new FabricItemSettings().maxDamage(128)));
 
     public  static  final Item KEN_STAFF = registerItem("ken_staff",
-            new Item(new FabricItemSettings().maxCount(1)));
+            new KenStaffItem(new FabricItemSettings().maxCount(1)));
 
 
     public  static  final Item KEN_PICKAXE = registerItem("ken_pickaxe",

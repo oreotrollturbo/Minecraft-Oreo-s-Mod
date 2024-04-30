@@ -45,7 +45,8 @@ public class TutorialModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.PARTICLE_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAILGUN_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAILGUN_PARTICLE_PROJECTILE, FlyingItemEntityRenderer::new);
-        
+        EntityRendererRegistry.register(ModEntities.BALL_OF_FIRE, FlyingItemEntityRenderer::new);
+
         ParticleFactoryRegistry.getInstance().register(TutorialMod.GREEN_FLAME, FlameParticle.Factory::new);
     }
 }// Here comes a candle to light you to bed

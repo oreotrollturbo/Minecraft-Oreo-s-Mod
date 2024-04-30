@@ -62,6 +62,9 @@ public class ParticleProjectileEntity extends ThrownItemEntity { //The amount of
             }else {
                 spawnParticles(1);
             }
+            if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+                discard();
+            }
         }
         tickCounter++;
         super.tick();

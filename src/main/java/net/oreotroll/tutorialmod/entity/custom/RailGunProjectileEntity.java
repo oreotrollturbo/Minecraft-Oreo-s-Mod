@@ -55,6 +55,7 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
     }
 
     protected int waterTickCounter = 0;
+    private int tickCounter = 0;
 
     @Override
     public void tick() {
@@ -66,7 +67,11 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
                     waterTickCounter++;
                 }
             }
+            if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+                discard();
+            }
         }
+        tickCounter++;
         super.tick();
     }
 }
