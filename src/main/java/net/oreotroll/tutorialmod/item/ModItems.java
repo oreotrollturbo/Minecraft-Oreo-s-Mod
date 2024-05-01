@@ -1,5 +1,6 @@
 package net.oreotroll.tutorialmod.item;
 
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -20,6 +21,8 @@ public class ModItems { //Big brother is always watching
     public  static  final Item DEATH_ = registerItem("death_", new Item(new FabricItemSettings()));
     public  static  final Item KEN_INGOT = registerItem("ken_ingot", new Item(new FabricItemSettings()));
     public  static  final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+
+    //public  static  final Item KEN_SHIELD = registerItem("ken_shield", new Item(new FabricItemSettings()));
 
     public  static  final Item JETPACK_HELLRIDE_MUSIC_DISC = registerItem("jetpack_hellride_music_disc", //EPIC MUSIC DISK YIPEEE
             new MusicDiscItem(7, ModSounds.JETPACK_HELLRIDE,new  FabricItemSettings().maxCount(1),155));
@@ -60,6 +63,8 @@ public class ModItems { //Big brother is always watching
             new SwordItem(ModToolMaterial.KEN_INGOT, 11,2f,
                     new FabricItemSettings().maxCount(1)));
 
+    public static final Item KEN_SHIELD = new FabricShieldItem(new FabricItemSettings().maxDamage(3500), 8, 13, ModItems.KEN_INGOT);
+
 
 
 
@@ -86,6 +91,8 @@ public class ModItems { //Big brother is always watching
             new SniperItem(new FabricItemSettings().maxCount(1)));
     public  static  final Item RAIL_GUN = registerItem("rail_gun",
             new RailGunItem(new FabricItemSettings().maxCount(1)));
+
+
 
 
 

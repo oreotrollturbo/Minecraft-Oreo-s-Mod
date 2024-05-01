@@ -6,10 +6,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.item.ShieldItem;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItems;
@@ -299,6 +302,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('I', Items.STICK)
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KEN_SHIELD,1)
+                .pattern("KSK")
+                .pattern("KKK")
+                .pattern(" K ")
+                .input('S', ModItems.KEN_INGOT)
+                .input('K', Items.CRIMSON_PLANKS)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_SHIELD)));
 
 
 

@@ -66,6 +66,7 @@ public class ModItemGroups {
                         entries.add(ModItems.KEN_PICKAXE);
                         entries.add(ModItems.KEN_AXE);
                         entries.add(ModItems.KEN_SWORD);
+                        entries.add(ModItems.KEN_SHIELD);
 
                         entries.add(ModItems.KEN_HELMET);
                         entries.add(ModItems.KEN_CHESTPLATE);
