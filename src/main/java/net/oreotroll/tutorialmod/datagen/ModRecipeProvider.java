@@ -250,14 +250,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.BEDROCK),conditionsFromItem(Blocks.BEDROCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_OP_STAFF)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.NYX_STAIRS,1)
+                .pattern("K  ")
+                .pattern("KK ")
+                .pattern("KKK")
+                .input('K', ModItems.NYX)
+                .criterion(hasItem(ModItems.NYX),conditionsFromItem(ModItems.NYX))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.NYX_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.KEN_STAIRS,1)
+                .pattern("K  ")
+                .pattern("KK ")
+                .pattern("KKK")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.KEN_DOOR,3)
+                .pattern("KK ")
+                .pattern("KK ")
+                .pattern("KK ")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_DOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.KEN_TRAPDOOR,1)
+                .pattern("   ")
+                .pattern("KK ")
+                .pattern("KK ")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.KEN_FENCE,3)
+                .pattern("   ")
+                .pattern("KIK")
+                .pattern("KIK")
+                .input('K', ModItems.KEN_INGOT)
+                .input('I', Items.STICK)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.KEN_FENCE_GATE,1)
+                .pattern("   ")
+                .pattern("IKI")
+                .pattern("IKI")
+                .input('K', ModItems.KEN_INGOT)
+                .input('I', Items.STICK)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KEN_FENCE_GATE)));
 
 
 
-        createDoorRecipe(ModBlocks.KEN_DOOR, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
-        createTrapdoorRecipe(ModBlocks.KEN_TRAPDOOR, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
-        createFenceRecipe(ModBlocks.KEN_FENCE, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
-        createFenceGateRecipe(ModBlocks.KEN_FENCE_GATE, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
-        createStairsRecipe(ModBlocks.KEN_STAIRS, Ingredient.ofItems(ModItems.KEN_INGOT)).criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT));
 
 // There are so many recipes jesus christ
 

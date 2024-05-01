@@ -37,10 +37,10 @@ public class PorcupineEntity extends AnimalEntity {
             DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
     public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;  // All of this is animation stuff not much to say about this
+    private int idleAnimationTimeout = 0;
 
     public final AnimationState attackingAnimationState = new AnimationState();
-    public int attackAnimationTimeout = 0;
+    public int attackAnimationTimeout = 0;// All of this is animation stuff not much to say about this
 
     public PorcupineEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
