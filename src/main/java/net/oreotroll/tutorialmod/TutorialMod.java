@@ -5,17 +5,19 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.item.Item;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
-import net.oreotroll.tutorialmod.datagen.ModWorldGenerator;
+import net.oreotroll.tutorialmod.datagen.ModModelProvider;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
+import net.oreotroll.tutorialmod.item.ModToolMaterial;
 import net.oreotroll.tutorialmod.recipe.ModRecipes;
 import net.oreotroll.tutorialmod.screen.ModScreenHandlers;
 import net.oreotroll.tutorialmod.sound.ModSounds;
@@ -30,8 +32,13 @@ public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+
+
 	@Override
 	public void onInitialize() { // this simply initialises ze mod
+
+		ModEntities.registerModEntities();
 
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
@@ -55,12 +62,13 @@ public class TutorialMod implements ModInitializer {
 		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
 
 
-
-
 		Registry.register(Registries.PARTICLE_TYPE, new Identifier("tutorialmod", "green_flame"), GREEN_FLAME);
+
 
 	}
 
 	public static final DefaultParticleType GREEN_FLAME = FabricParticleTypes.simple();
+
+
 }// I do not know,
 //Says the great bell at Bow.

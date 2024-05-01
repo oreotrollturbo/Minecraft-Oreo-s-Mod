@@ -236,7 +236,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("PDP")
                 .pattern("NNN")
                 .input('D', Items.DIAMOND)
-                .input('P', Items.PRISMARINE_SHARD)
+                .input('P', Items.AMETHYST_SHARD)
                 .input('N', Blocks.NETHERRACK)
                 .criterion(hasItem(Items.DIAMOND),conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY)));
@@ -249,6 +249,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('K', ModBlocks.KEN_BLOCK)
                 .criterion(hasItem(Blocks.BEDROCK),conditionsFromItem(Blocks.BEDROCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_OP_STAFF)));
+
 
 
 

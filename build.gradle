@@ -17,6 +17,7 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url "https://maven.shedaniel.me" }
+
 }
 
 fabricApi {
@@ -34,6 +35,7 @@ dependencies {
 
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:13.0.666"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:13.0.666"
+
 	
 }
 

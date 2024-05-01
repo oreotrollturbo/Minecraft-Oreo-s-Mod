@@ -48,6 +48,10 @@ public class ModEntities {
             FabricEntityTypeBuilder.<BallOfFireEntity>create(SpawnGroup.MISC,BallOfFireEntity::new)
                     .dimensions(EntityDimensions.fixed(0.4f, 0.4f)).build());
 
+    public static void registerModEntities() {
+        TutorialMod.LOGGER.info("Registering Entities for " + TutorialMod.MOD_ID);
+    }
+
     //I'm starting to see shadowy figures appear in the corner of my eye
 
 
