@@ -31,6 +31,6 @@ public class KenStaffItem extends Item {
             world.spawnEntity(ballOfFireEntity);
         }
 
-        return TypedActionResult.success(user.getStackInHand(hand), world.isClient());
+        return TypedActionResult.success(user.getStackInHand(hand),world.isClient() );
     }
 }

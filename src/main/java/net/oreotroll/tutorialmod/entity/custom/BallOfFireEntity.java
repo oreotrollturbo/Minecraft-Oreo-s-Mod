@@ -1,8 +1,10 @@
 package net.oreotroll.tutorialmod.entity.custom;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
@@ -49,14 +51,16 @@ public class BallOfFireEntity extends ThrownItemEntity {
         return true;
     }
 
-    @Override
-    protected void onCollision(HitResult hitResult) {
 
-        boolean bl = this.getWorld().getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING);
-        this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float)this.explosionPower, bl, World.ExplosionSourceType.BLOCK);
+    @Override
+   protected void onCollision(HitResult hitResult) {
+
+        if (!this.getWorld().isClient){
+            this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float) this.explosionPower, true, World.ExplosionSourceType.MOB);
+            this.discard();
+        }
 
         super.onCollision(hitResult);
-        this.discard();
     }
 
     @Override
@@ -66,13 +70,16 @@ public class BallOfFireEntity extends ThrownItemEntity {
             Entity entity = entityHitResult.getEntity();
             Entity user = this.getOwner();
             if (entity == user){
-                entity.damage(ModDamageTypes.of(getWorld(),ModDamageTypes.CUSTOM_DAMAGE_TYPE), (float)directHitDamage);
+                this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float) this.explosionPower, true, World.ExplosionSourceType.MOB);
+                //entity.damage(ModDamageTypes.of(getWorld(),ModDamageTypes.CUSTOM_DAMAGE_TYPE), 0);
             }
             if (user instanceof LivingEntity) {
-                this.applyDamageEffects((LivingEntity)user, entity);
+                this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float) this.explosionPower, true, World.ExplosionSourceType.MOB);
+                entity.damage(this.getDamageSources().thrown(this, this.getOwner()), directHitDamage);
             }
-
+            this.discard();
         }
+
         super.onEntityHit(entityHitResult);
 
     }
