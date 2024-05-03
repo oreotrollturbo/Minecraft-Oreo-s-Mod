@@ -25,7 +25,7 @@ import net.oreotroll.tutorialmod.item.ModItems;
 
 public class BulletProjectileEntity extends ThrownItemEntity { // This was the first class I made entirely on my own
 
-    public int bulletDamage = 10; //the damage of the bullet 30 by default
+    public float bulletDamage = 10f; //the damage of the bullet 30 by default
 
 
     public BulletProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -48,9 +48,11 @@ public class BulletProjectileEntity extends ThrownItemEntity { // This was the f
 
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
+
+
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), bulletDamage);
+        entity.damage(ModDamageTypes.of(this.getWorld(), ModDamageTypes.BULLET_DAMAGE_TYPE), bulletDamage);
     }
 
     private int tickCounter = 0;

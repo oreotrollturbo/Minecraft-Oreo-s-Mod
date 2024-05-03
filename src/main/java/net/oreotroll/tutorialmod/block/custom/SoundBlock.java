@@ -44,7 +44,7 @@ public class SoundBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity) {
-            entity.damage(ModDamageTypes.of(world, ModDamageTypes.CUSTOM_DAMAGE_TYPE), 1.0f);
+            entity.damage(ModDamageTypes.of(world, ModDamageTypes.BULLET_DAMAGE_TYPE), 1.0f);
         }
     }
 
