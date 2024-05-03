@@ -3,6 +3,7 @@ package net.oreotroll.tutorialmod.entity.custom;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
@@ -17,8 +18,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
-import net.oreotroll.tutorialmod.block.ModBlocks;
-import net.oreotroll.tutorialmod.block.custom.DiceBlock;
+
 import net.oreotroll.tutorialmod.datagen.ModDamageTypes;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.item.ModItems;
@@ -50,7 +50,7 @@ public class BulletProjectileEntity extends ThrownItemEntity { // This was the f
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        entity.damage(ModDamageTypes.of(getWorld(),ModDamageTypes.CUSTOM_DAMAGE_TYPE), (float)bulletDamage);
+        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), bulletDamage);
     }
 
     private int tickCounter = 0;

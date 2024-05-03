@@ -53,10 +53,10 @@ public class BallOfFireEntity extends ThrownItemEntity {
     protected void onCollision(HitResult hitResult) {
 
         boolean bl = this.getWorld().getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING);
-        this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float)this.explosionPower, bl, World.ExplosionSourceType.MOB);
-        this.discard();
+        this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), (float)this.explosionPower, bl, World.ExplosionSourceType.BLOCK);
 
         super.onCollision(hitResult);
+        this.discard();
     }
 
     @Override

@@ -31,7 +31,7 @@ public class SniperItem extends Item { // Professionals have standards
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
         ItemStack itemStack = user.getOffHandStack();
-        user.getItemCooldownManager().set(this, 50); //Be efficient
+        user.getItemCooldownManager().set(this, 60); //Be efficient
 
         if (!world.isClient) {
 
@@ -40,7 +40,7 @@ public class SniperItem extends Item { // Professionals have standards
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
                         ModSounds.SOUND_SNIPER_BULLET_SHOOT, SoundCategory.NEUTRAL, 0.4F, 1.0F);
                 BulletProjectileEntity bulletProjectileEntity = new BulletProjectileEntity(user, world);
-                bulletProjectileEntity.bulletDamage = 100;
+                bulletProjectileEntity.bulletDamage = 50;
                 bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 70.5F, 0.0F);
                 world.spawnEntity(bulletProjectileEntity);
             }else {

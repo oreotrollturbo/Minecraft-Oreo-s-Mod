@@ -1,18 +1,19 @@
 {
 	"schemaVersion": 1,
 	"id": "tutorialmod",
-	"version": "${version}",
-	"name": "Tutorial Mod",
-	"description": "yipeeee",
+	"version": "v0.5-1.20.2",
+	"name": "Oreo's Mod",
+	"description": "Oreo's stupid ideas come to reality",
 	"authors": [
 		"oreotrollturbo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/oreotrollturbo/Minecraft-Oreo-s-Mod",
+		"issues": "https://github.com/oreotrollturbo/Minecraft-Oreo-s-Mod/issues",
+		"sources": "https://fabricmc.net/"
 	},
 	"license": "MIT",
-	"icon": "assets/template-mod/icon.png",
+	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -40,5 +41,11 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+	"contributors": [
+		"misteruni",
+		"cr33p.",
+		"nyxiia23",
+		"karmeltazit"
+	]
 }
