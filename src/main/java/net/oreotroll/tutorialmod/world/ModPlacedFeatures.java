@@ -22,8 +22,8 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, KEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.KEN_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(-10))));
+                ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-60), YOffset.fixed(-10))));
 
     }
 

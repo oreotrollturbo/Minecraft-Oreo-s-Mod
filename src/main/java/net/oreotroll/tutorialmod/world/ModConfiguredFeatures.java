@@ -29,7 +29,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.KEN_ORE.getDefaultState()));
 
 
-        register(context, KEN_ORE_KEY , Feature.ORE, new OreFeatureConfig(overworldKenOres, 3));
+        register(context, KEN_ORE_KEY , Feature.ORE, new OreFeatureConfig(overworldKenOres, 4));
 
     } // I once spent 5 hours looking for a mistake in my code and it ended up being a stupid misspelled file name
 
