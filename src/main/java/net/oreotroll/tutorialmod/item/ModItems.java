@@ -92,6 +92,9 @@ public class ModItems { //Big brother is always watching
     public  static  final Item RAIL_GUN = registerItem("rail_gun",
             new RailGunItem(new FabricItemSettings().maxCount(1)));
 
+    public  static  final Item GLOCK = registerItem("glock",
+            new GlockItem(new FabricItemSettings().maxCount(1)));
+
 
 
 

@@ -68,10 +68,12 @@ public class BulletProjectileEntity extends ThrownItemEntity { // This was the f
         tickCounter++;
     } // I am very proud of this one
 
+    public int maxtime = 400; //20 seconds
+
     @Override
     public void tick() {
 
-        if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+        if (tickCounter >= maxtime){ //Makes the projectile kill itself after 20 seconds of being spawned
             discard();
         }
 

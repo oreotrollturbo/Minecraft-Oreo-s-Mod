@@ -25,5 +25,6 @@ public abstract class ModelLoaderMixin {
     public void addKenStaff(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
         this.addModel(new ModelIdentifier(TutorialMod.MOD_ID, "ken_staff_3d", "inventory"));
         this.addModel(new ModelIdentifier(TutorialMod.MOD_ID, "ken_op_staff_3d", "inventory"));
+        this.addModel(new ModelIdentifier(TutorialMod.MOD_ID, "glock_3d", "inventory"));
     }
 }

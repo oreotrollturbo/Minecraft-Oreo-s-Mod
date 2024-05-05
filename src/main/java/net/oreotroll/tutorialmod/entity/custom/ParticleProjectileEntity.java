@@ -50,6 +50,7 @@ public class ParticleProjectileEntity extends ThrownItemEntity { //The amount of
         this.getWorld().addParticle(ParticleTypes.BUBBLE, this.getParticleX(0.5), this.getRandomBodyY(), this.getParticleZ(0.5),0.0,0.0,0.0 );
     }
 
+    public int maxParticletime = 400; //max time before discard
 
     private int tickCounter = 0;
 
@@ -62,7 +63,7 @@ public class ParticleProjectileEntity extends ThrownItemEntity { //The amount of
             }else {
                 spawnParticles(1);
             }
-            if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+            if (tickCounter >= maxParticletime){ //Makes the projectile kill itself after 20 seconds of being spawned
                 discard();
             }
         }
