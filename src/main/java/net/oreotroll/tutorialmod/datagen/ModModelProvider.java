@@ -66,6 +66,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MEAT_BALLS, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.AR_MAG, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.JETPACK_HELLRIDE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.CANT_GO_TO_HELL_MUSIC_DISC, Models.GENERATED);

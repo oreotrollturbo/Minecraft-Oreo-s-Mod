@@ -312,6 +312,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_SHIELD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AR_MAG,1)
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', ModItems.BULLET)
+                .criterion(hasItem(ModItems.BULLET),conditionsFromItem(ModItems.BULLET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.AR_MAG)));
+
 
 
 

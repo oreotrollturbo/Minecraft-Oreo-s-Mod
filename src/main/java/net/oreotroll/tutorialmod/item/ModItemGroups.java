@@ -23,6 +23,8 @@ public class ModItemGroups {
                         entries.add(ModItems.KEN_INGOT);
                         entries.add(ModItems.RUBY);
 
+                        entries.add(ModItems.AR_MAG);
+
                         entries.add(ModItems.VODKA);
                         entries.add(ModItems.PIEROGI);
                         entries.add(ModItems.MEAT_BALLS);

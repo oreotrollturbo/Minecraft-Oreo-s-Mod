@@ -22,6 +22,8 @@ public class ModItems { //Big brother is always watching
     public  static  final Item KEN_INGOT = registerItem("ken_ingot", new Item(new FabricItemSettings()));
     public  static  final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
 
+    public  static  final Item AR_MAG = registerItem("ar_mag", new Item(new FabricItemSettings()));
+
     //public  static  final Item KEN_SHIELD = registerItem("ken_shield", new Item(new FabricItemSettings()));
 
     public  static  final Item JETPACK_HELLRIDE_MUSIC_DISC = registerItem("jetpack_hellride_music_disc", //EPIC MUSIC DISK YIPEEE

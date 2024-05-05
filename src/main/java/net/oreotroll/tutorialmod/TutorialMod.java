@@ -45,6 +45,8 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() { // this simply initialises ze mod
 
+
+
 		ModEntities.registerModEntities();
 
 		ModItemGroups.registerItemGroups();

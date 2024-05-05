@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -36,36 +37,66 @@ public class ARItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
+
         ItemStack itemStack = user.getOffHandStack();
+
 
         if (!world.isClient) {
 
-            if (itemStack.isOf(ModItems.BULLET)) {
 
-                world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
-                        ModSounds.SOUND_BULLET_SHOOT, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+            if (itemStack.isOf(ModItems.AR_MAG) && bulletsInGun >= 30) {
 
-                ParticleProjectileEntity particleProjectileEntity = new ParticleProjectileEntity(user, world);
-                particleProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 4.3F, 0.0F);
-                world.spawnEntity(particleProjectileEntity);
+                itemStack.decrement(1);
+                bulletsInGun = 30;
+                user.sendMessage(Text.literal("Ammo 30/30"), true);
 
-                BulletProjectileEntity bulletProjectileEntity = new BulletProjectileEntity(user, world);
-                bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 40.5F, 0.0F);
-                world.spawnEntity(bulletProjectileEntity);
+            }else if (bulletsInGun > 0){
 
-            }else {
+                shoot(world,user);
+
+                bulletsInGun--;
+
+                user.sendMessage(Text.literal("Ammo " + bulletsInGun +"/30"), true);
+
+            } else if (itemStack.isOf(ModItems.BULLET) && bulletsInGun == 0) {
+
+                bulletsInGun++;
+                itemStack.decrement(1);
+                user.sendMessage(Text.literal("Ammo 1/30"), true);
+
+            } else {
+
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
                         ModSounds.SOUND_GUN_DRY_FIRE, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+
+                user.sendMessage(Text.literal("No Ammo"), true);
             }
 
-        }
-        if (!user.getAbilities().creativeMode) {
-            itemStack.decrement(1);
         }
 
         return super.use(world, user, hand);
     }
-    //The shadown creatures are comming
+
+    private void shoot(World world,PlayerEntity user){
+        world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
+                ModSounds.SOUND_BULLET_SHOOT, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+
+        ParticleProjectileEntity particleProjectileEntity = new ParticleProjectileEntity(user, world);
+        particleProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 4.3F, 0.0F);
+        world.spawnEntity(particleProjectileEntity);
+
+        BulletProjectileEntity bulletProjectileEntity = new BulletProjectileEntity(user, world);
+        bulletProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 40.5F, 0.0F);
+        world.spawnEntity(bulletProjectileEntity);
+    }
+
+    private int bulletsInGun = 0;
+
+
 
 
 }
+
+
+
+//The shadow creatures are comming

@@ -7,12 +7,14 @@
   "item.tutorialmod.ken_ingot": "Ken Ingot",
   "item.tutorialmod.vodka": "Vodka",
 
+  "item.tutorialmod.ar_mag": "Assault Rifle Mag",
+
 
   "item.tutorialmod.dice": "Dice",
   "item.tutorialmod.bullet": "Bullet",
   "item.tutorialmod.sniper_bullet": "Sniper Bullet",
 
-  "item.tutorialmod.gun": "Gun",
+  "item.tutorialmod.gun": "Assault Rifle",
   "item.tutorialmod.glock": "Glock",
   "item.tutorialmod.sniper": "Sniper",
   "item.tutorialmod.rail_gun": "Rail Gun",
@@ -86,6 +88,9 @@
 
 
 "death.attack.gun": "%1$s was shot!",
+
+  "category.tutorialmod.bind": "Oreo's Mod KeyBinds",
+  "key.tutorialmod.bind": "Test bind",
 
 
 
