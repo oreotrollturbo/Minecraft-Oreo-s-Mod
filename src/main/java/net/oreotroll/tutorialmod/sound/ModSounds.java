@@ -26,6 +26,11 @@ public class ModSounds { //I have added quite a few sounds
     public static final SoundEvent SOUND_RAIL_GUN_WINDUP = registerSoundEvent("sound_rail_gun_windup");
     public static final SoundEvent SOUND_RAIL_GUN_WINDOWN = registerSoundEvent("sound_rail_gun_windown");
 
+
+    public static final SoundEvent SOUND_GUN_CLICK = registerSoundEvent("sound_gun_click");
+    public static final SoundEvent AR_RELOAD = registerSoundEvent("ar_reload");
+
+
     public static final SoundEvent JETPACK_HELLRIDE = registerSoundEvent("jetpack_hellride"); // All of these are bangers
     public static final SoundEvent KEN_WAITING_FOR_LOVE = registerSoundEvent("ken_waiting_for_love");
     public static final SoundEvent CANT_GO_TO_HELL = registerSoundEvent("cant_go_to_hell");

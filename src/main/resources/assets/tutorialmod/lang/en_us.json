@@ -86,6 +86,9 @@
 
   "item.tutorialmod.ken_shield": "Ken Shield",
 
+  "sounds_tutorialmod.sound_gun_click": "Gun Click",
+  "sounds_tutorialmod.ar_reload": "Ar reload",
+
 
 "death.attack.gun": "%1$s was shot!",
 

@@ -44,13 +44,16 @@ public class ARItem extends Item {
         if (!world.isClient) {
 
 
-            if (itemStack.isOf(ModItems.AR_MAG) && bulletsInGun >= 30) {
+            if (itemStack.isOf(ModItems.AR_MAG) && !(bulletsInGun >= 30)) { //Mag reload
 
                 itemStack.decrement(1);
+                world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
+                        ModSounds.AR_RELOAD, SoundCategory.NEUTRAL, 0.5F, 1.0F);
+                user.getItemCooldownManager().set(this, 60);
                 bulletsInGun = 30;
                 user.sendMessage(Text.literal("Ammo 30/30"), true);
 
-            }else if (bulletsInGun > 0){
+            }else if (bulletsInGun > 0){ //Shoot
 
                 shoot(world,user);
 
@@ -58,13 +61,16 @@ public class ARItem extends Item {
 
                 user.sendMessage(Text.literal("Ammo " + bulletsInGun +"/30"), true);
 
-            } else if (itemStack.isOf(ModItems.BULLET) && bulletsInGun == 0) {
+            } else if (itemStack.isOf(ModItems.BULLET)) { //Add one bullet manually
 
                 bulletsInGun++;
                 itemStack.decrement(1);
+                world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
+                        ModSounds.SOUND_GUN_CLICK, SoundCategory.NEUTRAL, 0.5F, 1.0F);
+                user.getItemCooldownManager().set(this, 15);
                 user.sendMessage(Text.literal("Ammo 1/30"), true);
 
-            } else {
+            } else { // No ammo
 
                 world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
                         ModSounds.SOUND_GUN_DRY_FIRE, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));

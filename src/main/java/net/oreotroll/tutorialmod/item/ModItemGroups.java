@@ -23,7 +23,6 @@ public class ModItemGroups {
                         entries.add(ModItems.KEN_INGOT);
                         entries.add(ModItems.RUBY);
 
-                        entries.add(ModItems.AR_MAG);
 
                         entries.add(ModItems.VODKA);
                         entries.add(ModItems.PIEROGI);
@@ -84,6 +83,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DICE);
                         entries.add(ModItems.BULLET);
                         entries.add(ModItems.SNIPER_BULLET);
+                        entries.add(ModItems.AR_MAG);
 
                         entries.add(ModItems.GUN);
                         entries.add(ModItems.SNIPER);

@@ -94,5 +94,17 @@
     "sounds":[
       "tutorialmod:sound_rail_gun_windown"
     ]
+  },
+  "sound_gun_click": {
+    "subtitle": "sounds_tutorialmod.sound_gun_click",
+    "sounds":[
+      "tutorialmod:sound_gun_click"
+    ]
+  },
+  "ar_reload": {
+    "subtitle": "sounds_tutorialmod.ar_reload",
+    "sounds":[
+    "tutorialmod:ar_reload"
+   ]
   }
 }
