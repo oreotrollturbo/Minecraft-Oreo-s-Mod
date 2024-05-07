@@ -1,6 +1,5 @@
 package net.oreotroll.tutorialmod.world.gen;
 
-import dev.architectury.platform.Mod;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;

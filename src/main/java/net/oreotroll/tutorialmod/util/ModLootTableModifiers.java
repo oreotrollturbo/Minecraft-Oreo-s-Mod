@@ -1,6 +1,7 @@
 package net.oreotroll.tutorialmod.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -30,6 +31,11 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","entities/warden");
     private static final Identifier ENDER_DRAGON_ID =
             new Identifier("minecraft","entities/ender_dragon");
+    private static final Identifier PORCUPINE_ID =
+            new Identifier("tutorialmod","entities/porcupine");
+
+
+
     //private static final Identifier SUSPICIOUS_SAND_ID =
             //new Identifier("minecraft","archeology/desert_pyramid");
 
@@ -110,6 +116,15 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(1f)) //Drops 100% of the time
                         .with(ItemEntry.builder(ModItems.DEATH_))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(7.0f, 12.3f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(PORCUPINE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f)) //Drops 100% of the time
+                        .with(ItemEntry.builder(Items.APPLE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
