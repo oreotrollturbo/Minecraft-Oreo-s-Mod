@@ -2,7 +2,6 @@ package net.oreotroll.tutorialmod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,14 +11,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.oreotroll.tutorialmod.item.ModArmourMaterials;
 
-import java.sql.CallableStatement;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
     public static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.RESISTANCE,  10, 1
+                    .put(ModArmourMaterials.KEN_INGOT, new StatusEffectInstance(StatusEffects.RESISTANCE,  10, 0
                     ,false,false,true)).build();
 
 

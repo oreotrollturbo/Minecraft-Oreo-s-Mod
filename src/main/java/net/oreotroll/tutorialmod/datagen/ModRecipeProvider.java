@@ -320,6 +320,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BULLET),conditionsFromItem(ModItems.BULLET))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.AR_MAG)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.FLINT,1)
+                .pattern("   ")
+                .pattern(" F ")
+                .pattern("   ")
+                .input('F', Blocks.GRAVEL)
+                .criterion(hasItem(Blocks.GRAVEL),conditionsFromItem(Blocks.GRAVEL))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.FLINT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KEN_HELMET,1)
+                .pattern("KKK")
+                .pattern("K K")
+                .pattern("   ")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KEN_CHESTPLATE,1)
+                .pattern("K K")
+                .pattern("KKK")
+                .pattern("KKK")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KEN_LEGGINGS,1)
+                .pattern("KKK")
+                .pattern("K K")
+                .pattern("K K")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KEN_BOOTS,1)
+                .pattern("   ")
+                .pattern("K K")
+                .pattern("K K")
+                .input('K', ModItems.KEN_INGOT)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_BOOTS)));
+
 
 
 

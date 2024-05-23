@@ -25,9 +25,7 @@ import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import net.oreotroll.tutorialmod.block.entity.renderer.CrockPotBlockEntityRenderer;
 import net.oreotroll.tutorialmod.entity.ModEntities;
-import net.oreotroll.tutorialmod.entity.client.ModModelLayers;
-import net.oreotroll.tutorialmod.entity.client.PorcupineModel;
-import net.oreotroll.tutorialmod.entity.client.PorcupineRenderer;
+import net.oreotroll.tutorialmod.entity.client.*;
 import net.oreotroll.tutorialmod.entity.custom.BallOfFireEntity;
 import net.oreotroll.tutorialmod.item.ModItems;
 import net.oreotroll.tutorialmod.screen.CrockPotScreen;
@@ -49,6 +47,7 @@ public class TutorialModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
 
+
         HandledScreens.register(ModScreenHandlers.CROCK_POT_SCREEN_HANDLER_SCREEN_HANDLER, CrockPotScreen::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.CROCK_POT_BLOCK_ENTITY, CrockPotBlockEntityRenderer::new);
@@ -62,6 +61,8 @@ public class TutorialModClient implements ClientModInitializer {
 
         ParticleFactoryRegistry.getInstance().register(TutorialMod.GREEN_FLAME, FlameParticle.Factory::new);
 
+
+
         keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.tutorialmod.bind", // The translation key of the keybinding's name
                 InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
@@ -72,6 +73,7 @@ public class TutorialModClient implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (keyBinding.wasPressed()) {
+                assert client.player != null;
                 client.player.sendMessage(Text.literal("Key 1 was pressed!"), false);
                 if (isHoldingItem(client.player)){
                     client.player.jump();

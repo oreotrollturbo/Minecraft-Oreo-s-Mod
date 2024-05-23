@@ -1,28 +1,28 @@
 package net.oreotroll.tutorialmod;
 
-import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.item.Item;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3i;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
-import net.oreotroll.tutorialmod.datagen.ModModelProvider;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.custom.PorcupineEntity;
 import net.oreotroll.tutorialmod.item.ModItemGroups;
 import net.oreotroll.tutorialmod.item.ModItems;
-import net.oreotroll.tutorialmod.item.ModToolMaterial;
 import net.oreotroll.tutorialmod.recipe.ModRecipes;
 import net.oreotroll.tutorialmod.screen.ModScreenHandlers;
 import net.oreotroll.tutorialmod.sound.ModSounds;
@@ -59,7 +59,7 @@ public class TutorialMod implements ModInitializer {
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
 
-		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorupineAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
@@ -82,6 +82,10 @@ public class TutorialMod implements ModInitializer {
 	}
 
 	public static final DefaultParticleType GREEN_FLAME = FabricParticleTypes.simple();
+
+
+
+
 
 	 // FabricShieldItem(settings.maxDamage(durability), cooldownTicks, enchantability, repairItems)
 

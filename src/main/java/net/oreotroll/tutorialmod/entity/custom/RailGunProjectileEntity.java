@@ -48,7 +48,6 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
     @Override
     protected void onCollision(HitResult hitResult) { //The sleep deprivation is getting into my head
         super.onCollision(hitResult);
-        super.onCollision(hitResult);
         if (!this.getWorld().isClient) {
             this.getWorld().sendEntityStatus(this, (byte) 3);
         }
@@ -67,7 +66,7 @@ public class RailGunProjectileEntity extends ThrownItemEntity {
                     waterTickCounter++;
                 }
             }
-            if (tickCounter >= 400){ //Makes the projectile kill itself after 20 seconds of being spawned
+            if (tickCounter >= 600){ //Makes the projectile kill itself after 30 seconds of being spawned
                 discard();
             }
         }

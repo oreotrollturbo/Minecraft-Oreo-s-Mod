@@ -93,7 +93,7 @@ public class BallOfFireEntity extends ThrownItemEntity {
     @Override
     public void tick() {
 
-        if (this.getWorld().isClient){
+        if (!this.getWorld().isClient){
 
             if (tickCounter >= 120){
                 discard();

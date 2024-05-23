@@ -60,6 +60,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KEN_WALL);
 
 
+                        entries.add(ModItems.KEN_TP_STAFF);
+                        entries.add(ModItems.KEN_OP_TP_STAFF);
                         entries.add(ModItems.KEN_STAFF);
                         entries.add(ModItems.KEN_OP_STAFF);
                         entries.add(ModItems.KEN_SHOVEL);

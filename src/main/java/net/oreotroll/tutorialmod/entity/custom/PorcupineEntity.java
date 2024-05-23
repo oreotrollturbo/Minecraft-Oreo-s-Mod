@@ -100,7 +100,7 @@ public class PorcupineEntity extends AnimalEntity {
     }
 
 
-    public static DefaultAttributeContainer.Builder createPorupineAttributes(){
+    public static DefaultAttributeContainer.Builder createPorcupineAttributes(){
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f)

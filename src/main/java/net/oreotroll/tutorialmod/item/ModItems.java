@@ -44,6 +44,11 @@ public class ModItems { //Big brother is always watching
     public  static  final Item KEN_OP_STAFF = registerItem("ken_op_staff",
             new KenOpStaffItem(new FabricItemSettings().maxCount(1)));
 
+    public  static  final Item KEN_TP_STAFF = registerItem("ken_tp_staff",
+            new TpRodItem(new FabricItemSettings().maxCount(1)));
+    public  static  final Item KEN_OP_TP_STAFF = registerItem("ken_op_tp_staff",
+            new TpOpRodItem(new FabricItemSettings().maxCount(1)));
+
 
     public  static  final Item KEN_PICKAXE = registerItem("ken_pickaxe",
             new PickaxeItem(ModToolMaterial.KEN_INGOT, 2,2f,
@@ -62,7 +67,7 @@ public class ModItems { //Big brother is always watching
                     new FabricItemSettings().maxCount(1)));
 
     public  static  final Item KEN_SWORD = registerItem("ken_sword",
-            new SwordItem(ModToolMaterial.KEN_INGOT, 11,2f,
+            new TpSwordItem(ModToolMaterial.KEN_INGOT, 11,2f,
                     new FabricItemSettings().maxCount(1)));
 
     public static final Item KEN_SHIELD = new FabricShieldItem(new FabricItemSettings().maxDamage(3500), 8, 13, ModItems.KEN_INGOT);
