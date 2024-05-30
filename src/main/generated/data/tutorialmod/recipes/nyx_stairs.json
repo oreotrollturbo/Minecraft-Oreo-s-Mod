@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "tutorialmod:nyx"
+    }
+  },
+  "pattern": [
+    "K  ",
+    "KK ",
+    "KKK"
+  ],
+  "result": {
+    "item": "tutorialmod:nyx_stairs"
+  },
+  "show_notification": true
+}

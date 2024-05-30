@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "N": {
+      "item": "minecraft:netherrack"
+    },
+    "P": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "PDP",
+    "NNN"
+  ],
+  "result": {
+    "item": "tutorialmod:ruby"
+  },
+  "show_notification": true
+}

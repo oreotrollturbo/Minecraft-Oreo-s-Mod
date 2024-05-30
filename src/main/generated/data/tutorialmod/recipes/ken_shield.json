@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "minecraft:crimson_planks"
+    },
+    "S": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "KSK",
+    "KKK",
+    " K "
+  ],
+  "result": {
+    "item": "tutorialmod:ken_shield"
+  },
+  "show_notification": true
+}

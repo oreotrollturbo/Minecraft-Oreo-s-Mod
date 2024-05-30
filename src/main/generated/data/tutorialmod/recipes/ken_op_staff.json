@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "tutorialmod:ken_block"
+    },
+    "S": {
+      "item": "tutorialmod:ken_staff"
+    }
+  },
+  "pattern": [
+    "KKK",
+    "KSK",
+    "KKK"
+  ],
+  "result": {
+    "item": "tutorialmod:ken_op_staff"
+  },
+  "show_notification": true
+}

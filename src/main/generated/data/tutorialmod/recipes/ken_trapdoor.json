@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "KK ",
+    "KK "
+  ],
+  "result": {
+    "item": "tutorialmod:ken_trapdoor"
+  },
+  "show_notification": true
+}

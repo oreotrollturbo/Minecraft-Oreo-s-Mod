@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "K": {
+      "item": "tutorialmod:ken_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "IKI",
+    "IKI"
+  ],
+  "result": {
+    "item": "tutorialmod:ken_fence_gate"
+  },
+  "show_notification": true
+}
