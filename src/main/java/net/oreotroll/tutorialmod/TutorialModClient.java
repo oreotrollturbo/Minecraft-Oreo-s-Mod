@@ -7,30 +7,25 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
-import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import net.oreotroll.tutorialmod.block.entity.renderer.CrockPotBlockEntityRenderer;
 import net.oreotroll.tutorialmod.entity.ModEntities;
 import net.oreotroll.tutorialmod.entity.client.*;
-import net.oreotroll.tutorialmod.entity.custom.BallOfFireEntity;
 import net.oreotroll.tutorialmod.item.ModItems;
 import net.oreotroll.tutorialmod.screen.CrockPotScreen;
 import net.oreotroll.tutorialmod.screen.ModScreenHandlers;
 import org.lwjgl.glfw.GLFW;
+
 
 public class TutorialModClient implements ClientModInitializer {
 
@@ -43,10 +38,8 @@ public class TutorialModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KEN_TRAPDOOR, RenderLayer.getCutout());
 
-
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
-
 
         HandledScreens.register(ModScreenHandlers.CROCK_POT_SCREEN_HANDLER_SCREEN_HANDLER, CrockPotScreen::new);
 
@@ -80,7 +73,6 @@ public class TutorialModClient implements ClientModInitializer {
                 }
             }
         });
-
 
     }
 

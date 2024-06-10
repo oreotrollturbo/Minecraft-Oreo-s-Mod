@@ -6,17 +6,11 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3i;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.block.entity.ModBlockEntities;
 import net.oreotroll.tutorialmod.entity.ModEntities;
@@ -68,6 +62,7 @@ public class TutorialMod implements ModInitializer {
 
 		FuelRegistry.INSTANCE.add(ModItems.VODKA,400);
 
+		//Registry.register(Registries.ITEM, new Identifier("tutorialmod", "rewind_clock"), REWIND_CLOCK);
 
 		Registry.register(Registries.PARTICLE_TYPE, new Identifier("tutorialmod", "green_flame"), GREEN_FLAME);
 

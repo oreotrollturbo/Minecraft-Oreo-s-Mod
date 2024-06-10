@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-07T02:28:14.0934017	Oreo's Mod/Model Definitions
+// 1.20.2	2024-06-07T18:38:03.7954655	Oreo's Mod/Model Definitions
 1c1dc3d610339864a460396727b356277c688d9c assets\tutorialmod\models\item\ken_leggings.json
 ddfc97de059738b9e405ccc70efcade98191bba9 assets\tutorialmod\models\item\gun.json
 6a1cee9cd7deed2e799f38d5f96ec10cb932b7ba assets\tutorialmod\models\block\ken_pressure_plate.json
@@ -37,6 +37,7 @@ fcdf96bc7e854bc1ee0f081304447db8291afad1 assets\tutorialmod\models\item\ken_legg
 72405ea3578ce768ca8b0cd5a12cad7976442a8a assets\tutorialmod\blockstates\ken_trapdoor.json
 f835d79e309c1d278c2536d77158782a9df33cd7 assets\tutorialmod\models\item\sniper.json
 6488301581a7b2f2cc980342af09c153991509e7 assets\tutorialmod\models\item\kui_block.json
+f433d2c094a3f3f7a3c50b81a7906ab8b76d82a1 assets\tutorialmod\models\item\rewind_clock_inactive.json
 c39002461a5827b910743c389497344c009e7aa2 assets\tutorialmod\blockstates\ken_pressure_plate.json
 f3ebfeeca1db6144a1d45fa93c61f656dd8964a4 assets\tutorialmod\models\item\ken_chestplate_amethyst_trim.json
 9120768d699b27081e2614cfb08a15600bd2d50a assets\tutorialmod\models\item\ken_wall.json
@@ -65,6 +66,7 @@ b3beaf57cb3d5b65af29ed2633570ccdf909d387 assets\tutorialmod\models\block\ken_sla
 9b18848503b03a79f75536337ea14edfd529c151 assets\tutorialmod\blockstates\nyx_stairs.json
 d90f13d611ea3a650cf4ba8140f736aed7e99148 assets\tutorialmod\models\block\killz_block.json
 d4fb7cbe500e1612a0efde94216096f3b65d0e29 assets\tutorialmod\models\item\ken_slab.json
+7c9715b64f3469454b2811dd0ccdf19208afe9c9 assets\tutorialmod\models\item\rewind_clock_active.json
 72c8445bed6bb018cf3333385a7cc65f3b62d4fa assets\tutorialmod\models\block\ken_wall_inventory.json
 c4b44af4057c063865798343a47a2d3e1017fc0a assets\tutorialmod\models\block\ken_fence_gate_wall_open.json
 bdb53bfa775a05e5405f87dd2e0888fb4237ccfd assets\tutorialmod\models\item\killz_block.json
@@ -139,8 +141,8 @@ bda1e909648ea1f0de7a9a5e0782337efa39a669 assets\tutorialmod\models\item\ken_ches
 a84130a1e69a310e11103a766f70887557461388 assets\tutorialmod\blockstates\ken_button.json
 1be29c6afc9a9ce317e19fbd5992cb4773bb3718 assets\tutorialmod\models\item\ken_boots_lapis_trim.json
 20962641d7e62f25686fa3fbedade8a035f53c4a assets\tutorialmod\models\item\ken_boots_redstone_trim.json
-4fe66e9449df95fd90a788677482dfd53e4e4a2e assets\tutorialmod\models\item\ken_door.json
 b4e1b68a69362c358e92ba8721dc7d728f9dcc1a assets\tutorialmod\models\block\ken_fence_gate_open.json
+4fe66e9449df95fd90a788677482dfd53e4e4a2e assets\tutorialmod\models\item\ken_door.json
 fda7df3a933b8f09e58fa28726b21909ff59e1f1 assets\tutorialmod\models\item\nyx_block.json
 7e439f9c39ea91be588ddc78cf4cd903b5b9cb70 assets\tutorialmod\blockstates\sound_block.json
 96bcc151532c201c8a0ff1a846b904c0abc43672 assets\tutorialmod\blockstates\uni_block.json

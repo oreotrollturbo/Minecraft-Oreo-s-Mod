@@ -1,12 +1,12 @@
 package net.oreotroll.tutorialmod.datagen;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Model;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.oreotroll.tutorialmod.block.ModBlocks;
 import net.oreotroll.tutorialmod.item.ModItems;
@@ -45,12 +45,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.CROCK_POT); // The crock put is a Dont Starve refference
 
-
-
-
-
-
-
     }
 
     @Override
@@ -67,6 +61,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.AR_MAG, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.REWIND_CLOCK_ACTIVE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REWIND_CLOCK_INACTIVE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.JETPACK_HELLRIDE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.KEN_WAITING_FOR_LOVE_MUSIC_DISC, Models.GENERATED);

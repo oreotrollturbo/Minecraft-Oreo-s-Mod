@@ -88,6 +88,9 @@ public class ModItems { //Big brother is always watching
 
     public static final Item DICE = registerItem("dice",new DiceItem(new FabricItemSettings()));
 
+    public static final Item REWIND_CLOCK_INACTIVE = registerItem("rewind_clock_inactive",new InactiveRewindClockItem(new FabricItemSettings().maxCount(1)));
+    public static final Item REWIND_CLOCK_ACTIVE = registerItem("rewind_clock_active",new ActiveRewindClockItem(new FabricItemSettings().maxCount(1)));
+
     public static final Item BULLET = registerItem("bullet",new BulletItem(new FabricItemSettings().maxCount(30)));
     public static final Item SNIPER_BULLET = registerItem("sniper_bullet",new BulletItem(new FabricItemSettings().maxCount(6)));
 

@@ -1,12 +1,12 @@
-// 1.20.2	2024-05-07T02:28:14.0898936	Oreo's Mod/Tags for minecraft:block
+// 1.20.2	2024-06-07T18:38:03.7914482	Oreo's Mod/Tags for minecraft:block
 a05cdbd075670561f30a8d9db0b27f5c9ff7d131 data\minecraft\tags\blocks\walls.json
 c0c21dd37bc5740a0fd4b8d23b548084594c6c2e data\fabric\tags\blocks\needs_tool_level_5.json
-aca241c34248d0706642276cd7f9e424c9c83bee data\minecraft\tags\blocks\needs_stone_tool.json
 6eb60221d5bc2270115fb1e86d2bdf7324ccaa4f data\minecraft\tags\blocks\mineable\pickaxe.json
+aca241c34248d0706642276cd7f9e424c9c83bee data\minecraft\tags\blocks\needs_stone_tool.json
 66f00627c7002b84c7acaa109aab20a58eb4e9a2 data\minecraft\tags\blocks\fences.json
 1c46fedd99f3215dda7165ce4f6d185973a4a1a4 data\minecraft\tags\blocks\needs_iron_tool.json
 0b5902953f313b9e110a55271a90926b4b390055 data\fabric\tags\blocks\needs_tool_level_4.json
 a440340f79c179446ba251af05bc5220b91f9e26 data\minecraft\tags\blocks\fence_gates.json
 98b3cd1cc62fdac3a84535bc2e68545a69176481 data\tutorialmod\tags\blocks\metal_detector_detectable_blocks.json
-ff730080500df37ee62cf53a5297a75b8db947fa data\minecraft\tags\blocks\needs_diamond_tool.json
 8e06808b157fe34fd067236d164e68b0c12d602f data\minecraft\tags\blocks\mineable\axe.json
+ff730080500df37ee62cf53a5297a75b8db947fa data\minecraft\tags\blocks\needs_diamond_tool.json

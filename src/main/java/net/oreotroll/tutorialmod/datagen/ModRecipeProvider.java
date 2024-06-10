@@ -361,7 +361,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.KEN_BOOTS)));
 
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REWIND_CLOCK_INACTIVE,1)
+                .pattern("KKK")
+                .pattern("KCK")
+                .pattern("KKK")
+                .input('K', ModItems.KEN_INGOT)
+                .input('C', Items.CLOCK)
+                .criterion(hasItem(ModItems.KEN_INGOT),conditionsFromItem(ModItems.KEN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.REWIND_CLOCK_INACTIVE)));
 
 // There are so many recipes jesus christ
 

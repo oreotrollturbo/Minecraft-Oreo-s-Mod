@@ -83,6 +83,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CROCK_POT);
 
                         entries.add(ModItems.DICE);
+                        entries.add(ModItems.REWIND_CLOCK_INACTIVE);
                         entries.add(ModItems.BULLET);
                         entries.add(ModItems.SNIPER_BULLET);
                         entries.add(ModItems.AR_MAG);
